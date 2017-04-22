@@ -24,6 +24,10 @@ footer ul li {
     display: inline;
 }
 
+footer ul li a:hover {
+    transform: scale(1.2);
+}
+
 footer .description ul li a,
 footer .description ul li a:hover,
 footer .description ul li a:active,
