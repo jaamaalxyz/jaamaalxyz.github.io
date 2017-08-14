@@ -1,0 +1,184 @@
+﻿/* Base CSS */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* navbar */
+.navbar-default {
+  background-color: #00BFFF;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 200%;
+  color: #fa0;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #220088;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+/* header */
+.jumbotron {
+  background-image: linear-gradient(0deg, #ffaaaa 0%, #11aaff 100%);
+  height: 100vh;
+}
+
+.jamal {
+  font-size: 120%;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+header h3 {
+  padding-bottom: .5em;
+}
+
+header img {
+  border: 2px solid #fff;
+}
+
+header .btn-primary a {
+  font-size: 120%;
+  color: #fff;
+}
+
+header .btn-primary a:hover {
+  text-decoration: none;
+}
+
+/* about */
+#about {
+  background-color: #E1AAB5;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding-top: 70px;
+}
+
+.about-h1 {
+  width: 20%;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.about-h3 {
+  padding-bottom: 20px;
+}
+
+.about-img {
+  padding-bottom: 20px;
+}
+
+
+/* freelance */
+#freelance {
+  background-color: #5175C0;
+  color: #fff;
+  padding: 3em;
+}
+
+.freelance .btn-block {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.freelance a:hover {
+  text-decoration: none;
+}
+
+.freelance .btn-block:hover {
+  border: 1px solid #fff;
+  background-color: #00BFFF;  
+}
+
+/* contact */
+#contact {
+  background-color: #00BFFF;
+  padding: 1em;
+}
+
+.contact-info {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.contact-heading h2 {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #fff;
+}
+
+.contact-heading h3 {
+  padding-bottom: 1em;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+footer .container-fluid {
+  background-color: #000;
+  padding: 1em;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .address, .employee {
+  border-right: 3px solid #fff;
+}
+
+.address {
+  padding-top: .7em;
+}
+
+.text {
+  font-family: Sans-serif;
+  font-size: .8em;
+  padding-left: 1em;
+}
+
+.social h2 {
+  font-weight: bold;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon li {
+  list-style-type: none;
+}
