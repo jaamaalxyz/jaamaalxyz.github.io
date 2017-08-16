@@ -40,7 +40,7 @@ body {
 
 /* header */
 .jumbotron {
-  background-image: linear-gradient(0deg, #ffaaaa 0%, #11aaff 100%);
+  background-image: linear-gradient(0deg, #30cc8b 0%, #11aaff 100%);
   height: 100vh;
 }
 
@@ -72,7 +72,7 @@ header .btn-primary a:hover {
 
 /* about */
 #about {
-  background-color: #E1AAB5;
+  background-color: #00BFFF;
   margin: 0 auto;
   margin-top: -30px;
   padding-top: 70px;
