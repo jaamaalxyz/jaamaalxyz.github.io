@@ -64,3 +64,18 @@
 }
 
 /* end of responsive rules */
+
+@media screen and (min-width: 480px) {
+    .container-flex {
+        display: block;
+    }
+
+    .box-2 {
+        width: 100%;
+    }
+
+    .box-2 .thumbnail {
+        left: 0;
+    }
+}
+
