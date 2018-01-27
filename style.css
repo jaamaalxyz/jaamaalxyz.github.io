@@ -182,3 +182,24 @@ footer .address, .employee {
 .social-icon li {
   list-style-type: none;
 }
+
+/* components are styled in different css, but responsive file is the same for all of them */
+@media screen and (max-width: 868px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
