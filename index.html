@@ -17,13 +17,14 @@
   <!-- Basic custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 <!-- Navbars -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-toggle" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-toggle" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -33,13 +34,13 @@
     </div>
 
     <!-- Collect the nav links for toggling -->
-    <div class="collapse navbar-collapse" id="main-nav-toggle">
+    <div class="collapse navbar-collapse" id="top-nav-toggle">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="https://medium.com/@jamal.pb95" target="_blank">Blog</a></li>
-        <li><a href="resume.pdf" target="_blank">Résumé</a></li>
+        <li><a target="_blank" href="https://medium.com/@jamal.pb95">Blog</a></li>
+        <li><a target="_blank" href="resume.pdf">Résumé</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -47,6 +48,7 @@
 </nav>
 
 <!-- Header -->
+<button onclick="topFunc()" id="scroll-to-top" title="Go to Top"><i class="fa fa-2x fa-arrow-circle-up" aria-hidden="true"></i></button>
 <header class="jumbotron">
   <div class="text-center">
     <img src="https://avatars2.githubusercontent.com/u/20262255?v=4&s=180" alt="jamal" class="img-circle">
@@ -61,75 +63,156 @@
 <section id="about">
   <div class="container">
     <div class="row">
-      <div class="text-center">
+      <div class="col-md-12">
         <h1 class="about-h1">ABOUT ME</h1>
         <h3 class="about-h3">My name is <span class="jamal">Jamal Uddin</span> and I am living in Bangladesh. I love designing and developing rich web applications with user experience in mind. I like solving problems, designing clean interfaces and constantly being in move to learn new things.</h3>
-        <div class="col-md-4 about-img">
-          <img src="https://i.imgur.com/9O4sIwF.png" alt="responsive-design">
-          <h1>Responsive Design</h1>
-          <p class="text-justify">Aliquam egestas ex a molestie condimentum. Fusce orci libero, pharetra vitae mauris nec, volutpat hendrerit tortor. Sed fermentum faucibus nunc ut feugiat. Nullam orci odio, consequat ac quam ut, ullamcorper porta risus. Aenean pellentesque fringilla rhoncus. Fusce ac leo sed velit efficitur laoreet sed ut ligula. Nunc id risus eleifend, semper ipsum eget, congue nisi. Nullam sem nulla, vehicula porttitor lectus ut, pulvinar consectetur massa.</p>
-        </div>
-        <div class="col-md-4 about-img">
-          <img src="https://i.imgur.com/KKZntaR.png" alt="web-development">
-          <h1>Web Development</h1>
-          <p class="text-justify">Aliquam egestas ex a molestie condimentum. Fusce orci libero, pharetra vitae mauris nec, volutpat hendrerit tortor. Sed fermentum faucibus nunc ut feugiat. Nullam orci odio, consequat ac quam ut, ullamcorper porta risus. Aenean pellentesque fringilla rhoncus. Fusce ac leo sed velit efficitur laoreet sed ut ligula. Nunc id risus eleifend, semper ipsum eget, congue nisi. Nullam sem nulla, vehicula porttitor lectus ut, pulvinar consectetur massa.</p>
-        </div>
-        <div class="col-md-4 about-img">
-          <img src="https://i.imgur.com/XwwQuEj.png" alt="psd-to-html">
-          <h1>PSD to HTML</h1>
-          <p class="text-justify">Aliquam egestas ex a molestie condimentum. Fusce orci libero, pharetra vitae mauris nec, volutpat hendrerit tortor. Sed fermentum faucibus nunc ut feugiat. Nullam orci odio, consequat ac quam ut, ullamcorper porta risus. Aenean pellentesque fringilla rhoncus. Fusce ac leo sed velit efficitur laoreet sed ut ligula. Nunc id risus eleifend, semper ipsum eget, congue nisi. Nullam sem nulla, vehicula porttitor lectus ut, pulvinar consectetur massa.</p>
-        </div>
+      </div>
+      <div class="col-md-4 col-xs-4 about-img">
+        <img class="service-img" src="https://getbootstrap.com/docs/3.3/assets/img/devices.png" alt="responsive-design">
+        <h3>Responsive Design</h3>
+      </div>
+      <div class="col-md-4 col-xs-4  about-img">
+        <img class="service-img" src="https://www.sopantech.com/assets/img/webdevelopmentbanner.png" alt="web-development">
+        <h3>Web Development</h3>
+      </div>
+      <div class="col-md-4 col-xs-4  about-img">
+        <img class="service-img" src="https://i.ytimg.com/vi/5ch2kgc5DD0/maxresdefault.jpg" alt="psd-to-html">
+        <h3>PSD to HTML</h3>
       </div>
     </div>
   </div>
+  
   <div class="container">
     <div class="row">
-      <h1>Education</h1>
       <hr>
-      <div class="col-md-6 col-xs-12">
-        <h1>Diploma-in-Engineering</h1>
-        <h2><i>Computer Technology</i></h2>
-        <h2>Rajshahi Polytechnic Institute, Rajshahi</h2>
-        <h3>C.G.P.A: 3.49 out of 4.00</h3>
+      <div class="col-md-12">
+        <h2>Education</h2>
+        <hr>
       </div>
-      <div class="col-md-6 col-xs-12">
-        <h1>S.S.C (Dakhil)</h1>
-        <h2><i>Science</i></h2>
-        <h2>Uzirpur Golabari Islamia Dakhil Madrasah</h2>
-        <h3>G.P.A: 5.00 out of 5.00</h3>
-      </div>
-    </div><hr>
+    </div>
     <div class="row">
       <div class="col-md-6">
-        <h1>PERSONAL</h1>
-        <h3>creative, flexible, team player, relaxed, eager for knowledge, organized, ambitious</h3>
+        <h3>Diploma-in-Engineering</h3>
+        <h4>Computer Technology</h4>
+        <h4>Rajshahi Polytechnic Institute</h4>
+        <h4 class="cgpa">CGPA: 3.49 out of 4.00</h4>
+      </div>
+        
+      <div class="col-md-6">
+        <h3>S.S.C (Dakhil)</h3>
+        <h4>Science</h4>
+        <h4>Uzirpur Golabari Islamia Dakhil Madrasah</h4>
+        <h4 class="cgpa">GPA: 5.00 out of 5.00</h4>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <h2>PERSONAL</h2>
+        <hr>
+        <h3>Creative, Flexible, Team player, Relaxed, Eager for knowledge, Organized, Ambitious</h3>
       </div>
       <div class="col-md-6">
-        <h1>INTEREST</h1>
-        <h3>Blogs and books, Islamic Nasheed, Friends, Movies, Open Source Projects, Maths, Data Science, Natural Language Processing</h3>
+        <h2>INTEREST</h2>
+        <hr>
+          <h3>Blogs and books, Cycling, Friends, Nasheed, Web Technologies, Open Source Projects, Maths, Programming & Data Science</h3>
       </div>
     </div>
   </div>
 </section>
 
-<!--
+<!-- skills -->
 <section id="skills">
   <div class="container">
-    <div clsaa="row">
-      <h1>My Skills</h1>
-      <p>Here are some of the Frontend development related hard skills I currently possess. Backend skills are coming soon.</p>
-      <div class="flex-container">
-        <img src="https://www.w3.org/html/logo/img/mark-word-icon.png" alt="html5">
-        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" alt="css3">
-        <img src="https://camo.githubusercontent.com/eb464a60a4a47f8b600aa71bfbc6aff3fe5c5392/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67" alt="js">
-        <img src="" alt="bootstrap">
-        <img src="" alt="jQuery">
-        <img src="" alt="github">
-      </div>
+    <h1 class="text-center skill-h1">My Skills</h1>
+    <h3 class="text-center">Here are some of my technical skills</h3>
+    <hr>
+    <div class="flex-container">
+      <img class="skill-img" src="https://www.w3.org/html/logo/img/mark-word-icon.png" alt="html5">
+      <img class="skill-img" src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" alt="css3">
+      <img class="skill-img" src="http://getbootstrap.com/docs/3.3/assets/brand/bootstrap-solid.svg" alt="bootstrap">
+      <img class="skill-img" src="https://i.stack.imgur.com/Mmww2.png" alt="js">
+      <img class="skill-img" src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif" alt="jQuery">
+      <img class="skill-img" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="sass">
+      <img class="skill-img" src="https://goo.gl/YxuYSM" alt="PHP">
+      <img class="skill-img" src="https://goo.gl/n7JBkM" alt="MySQL">
+      <img class="skill-img" src="http://www.freepngimg.com/thumb/photoshop_logo/4-2-photoshop-logo-png-picture-thumb.png" alt="photoshop">
+      <img class="skill-img" src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="git">
+    <!--
+      <img class="skill-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="github">
+      <img class="skill-img" src="https://webassets.mongodb.com/_com_assets/global/mongodb-logo-white.png" alt="mongoDB">
+      <img class="skill-img" src="https://nodejs.org/static/images/logo.svg" alt="nodeJS">
+      <img class="skill-img" src="https://github.com/webpack/media/blob/master/logo/icon.png?raw=true" alt="webpack">
+    -->
     </div>
   </div>
 </section>
--->
+
+<!-- Portfilio Area -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="port-folio_header wow fadeInUp">
+                <h2>My Latest Works</h2>
+                <p>Some Project are done and some are ongoing. </p>
+            </div>
+            <div class="col-md-12">
+                <div class="portfolio_list wow fadeInUp">
+                    <ul>
+                        <li data-filter="*">ALL.</li>
+                        <li data-filter=".up">Running.</li>
+                        <li data-filter=".com">Complete.</li>
+                    </ul>
+                </div>
+
+                <div class="grid wow fadeInUp">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item up wow fadeInUp">
+                        <a target="_blank" href="https://codepen.io/jamal-pb95/full/eWVGOG/">
+                          <img src="https://imgur.com/zyOOFaB.png" alt="tribute-bd">
+                      </a>
+                    </div>
+                    <div class="grid-item up wow fadeInUp">
+                      <a target="_blank" href="https://jamal-pb95.github.io/colorGame/">
+                        <img src="https://imgur.com/evCQCKS.png" alt="color game">
+                      </a>
+                    </div>
+                    <div class="grid-item up grid-item--width2 wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/wraJqE/">
+                        <img src="https://imgur.com/4ZmdMx2.png" alt="randome-quote-machine">
+                      </a>
+                    </div>
+                    <div class="grid-item com wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/RVywLR/">
+                        <img src="https://imgur.com/J2iMPNO.png" alt="survey-form">
+                      </a>
+                    </div>
+                    <div class="grid-item grid-item--width2 com wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/zPejYJ/">
+                        <img src="https://imgur.com/PR4cwrx.png" alt="url-shortner">
+                      </a>
+                    </div>
+                    <div class="grid-item up wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/LezKqz/">
+                        <img src="https://imgur.com/5bmKyXv.png" alt="split-home-page">
+                      </a>
+                    </div>
+                    <div class="grid-item com wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/jmvvpz/">
+                        <img src="https://imgur.com/UvdipZR.png" alt="kazi-nazrul-islam">
+                      </a>
+                    </div>
+                    <div class="grid-item com wow fadeInUp">
+                      <a target="_blank" href="https://codepen.io/jamal-pb95/full/dZqqoR/">
+                        <img src="https://imgur.com/pglBKQ7.png" alt="weather-app">
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- freelance bar -->
 <section id="freelance">
@@ -147,7 +230,7 @@
       <h2>DROP ME A LINE</h2>
       <h3>Want to get in touch with me? Be it to request more info about myself or my experience or to ask for my resume just feel free to drop me a line anytime. I will get back to you as soon as possible.</h3>
     </div>
-    <form action="mailto:jamal.pb95@gmail.com" method="post" enctype="text/plain">
+    <form method="GET">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" class="form-control" id="name" placeholder="Name" important>
@@ -184,12 +267,12 @@
         <div class="social text-center">
           <h2> AROUND THE WEB</h2>
           <ul class="social-icon fa-3x">
-            <li><a target="_blank" href="https://www.facebook.com/jamal.pb95"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a target="_blank" href="https://twitter.com/jamal_uddin95"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/jamal-pb95/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li><a target="_blank" href="https://github.com/jamal-pb95"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a target="_blank" href="https://codepen.io/jamal-pb95/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a target="_blank" href="https://www.freecodecamp.com/jamal-pb95"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
