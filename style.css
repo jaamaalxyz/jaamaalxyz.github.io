@@ -1,4 +1,4 @@
-﻿/* Base CSS */
+/* Base CSS */
 html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -13,12 +13,12 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
-  padding-top: 40px;
 }
 
 /* navbar */
 .navbar-default {
   background-color: #00BFFF;
+  
 }
 
 .navbar-default .navbar-brand {
@@ -45,15 +45,12 @@ body {
 /* header */
 .jumbotron {
   background-image: linear-gradient(to bottom, #11aaff, #30cc8b);
-  height: 100vh;
+  height: 95vh;
+  margin-top: 40px;
 }
 
 .jamal {
   color: #fff;
-}
-
-h1 {
-  font-weight: 700;
 }
 
 .emoji {
@@ -86,30 +83,28 @@ header .btn-primary a:hover {
   margin-top: -30px;
 }
 
-.about-h1, .skill-h1, .works-h1 {
-  width: 20%;
+.about-header,
+.skill-header {
+  width: 30%;
   margin: 0 auto;
   font-weight: 700;
   color: #fff;
   padding: 10px;
   border-bottom: 2px solid #fff;
+  text-align: center;
 }
 
-.about-h3 {
-  padding-bottom: 20px;
+.about-text {
+  padding: 20px 0;
 }
 
-.about-img {
-  padding-bottom: 20px;
+p {
+  font-size: 2em;
 }
 
 .service-img {
   width: 200px;
   height: 100px;
-}
-
-.cgpa {
-  font-family: serif;
 }
 
 
@@ -120,129 +115,29 @@ header .btn-primary a:hover {
 
 .flex-container {
   display: flex;
-  padding: 20px 200px;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.flex-container h3 {
+  padding-bottom: .5em;
+  border-bottom: 2px solid #fff;
 }
 
 .skill-img {
-  width: 120px;
-  height: 120px;
   margin: 1em;
+  height: 100px;
+  width: 100px;
 }
 
 .skill-img:hover {
   background-color: rgba(0, 255, 255, 0.2);
 }
 
+
 /* works / portfolio */
 
 #portfolio {
   background-color: #4CAF50;
-  padding: 100px 0;
-  display: block;
-}
-
-#portfolio .port-folio_header {
-  text-align: center;
-}
-
-#portfolio .port-folio_header h2 {
-  font-weight: 700;
-  font-size: 3rem;
-  color: #353434;
-  text-transform: inherit;
-}
-
-#portfolio .port-folio_header p {
-  padding-top: 20px;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-#portfolio .portfolio_list ul {
-  padding: 2rem 0;
-}
-
-#portfolio .portfolio_list ul li {
-  display: inline-block;
-  color: #fff;
-  padding-right: 3%;
-  font-weight: bold;
-  cursor: pointer;
-  color: #ffffff;
-  margin-right: 6px;
-  box-shadow: 2px 3px 3px #484848;
-  padding: 10px 14px;
-  background: #2f697d;
-}
-
-#portfolio .portfolio_list ul span {
-  color: #806b7c;
-}
-
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-item,
-.grid-sizer {
-  width: 20%;
-}
-
-.grid-item {
-  float: left;
-  height: 200px;
-  box-shadow: 2px 4px 3px -2px #9c9c9c;
-}
-
-.grid-item img {
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  border: 10px solid #fff;
-}
-
-.grid-item--width2 {
-  width: 40%;
-  height: 200px;
-}
-
-.grid-item--width2 img {
-  width: 100%;
-  height: 200px;
-}
-
-@media only screen and (max-width: 600px) {
-  .grid-item,
-  .grid-sizer {
-    width: 20%;
-  }
-
-  .grid-item {
-    float: left;
-    width: 40%;
-    height: 200px;
-    box-shadow: 2px 4px 3px -2px #9c9c9c;
-  }
-
-  .grid-item img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .grid-item--width2 {
-    width: 60%;
-    height: 200px;
-  }
-
-  .grid-item--width2 img {
-    width: 100%;
-    height: 200px;
-  }
 }
 
 
@@ -280,12 +175,12 @@ header .btn-primary a:hover {
   padding-top: 3em;
 }
 
-.contact-heading h2 {
+.contact-header h2 {
   padding-bottom: 1em;
   border-bottom: 2px solid #fff;
 }
 
-.contact-heading h3 {
+.contact-text {
   padding-bottom: 1em;
 }
 
@@ -296,10 +191,10 @@ form {
   flex-direction: column;
 }
 
+
 /* footer */
 footer .container-fluid {
   background-color: #000;
-  padding: 1em;
   color: #fff;
 }
 
@@ -307,12 +202,14 @@ footer a {
   color: #fff;
 }
 
-footer .address, .employee {
-  border-right: 3px solid #fff;
+footer .employment {
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
 }
 
-.address {
-  padding-top: .7em;
+.address,
+.social {
+  padding-top: 2em;
 }
 
 .text {
@@ -351,4 +248,36 @@ footer .address, .employee {
 
 #scroll-to-top:hover {
   background-color: #555;
+}
+
+
+@media only screen and (max-width: 500px) {
+  header h3 { padding-bottom: 1em; }
+  
+  .about-header,
+  .skill-header {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .about-text { text-align: justify; }
+
+  .flex-container {
+    justify-content: center;
+  }
+
+  .skill-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .freelance .btn-block {
+    width: 50%;
+  }
+
+  form { width: 100%; }
+
+  .contact-text,
+  .address,
+  .employment { display: none; }
 }
