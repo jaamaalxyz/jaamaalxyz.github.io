@@ -56,6 +56,12 @@ h1 {
   font-weight: 700;
 }
 
+.emoji {
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
 header h3 {
   padding-bottom: .5em;
 }
