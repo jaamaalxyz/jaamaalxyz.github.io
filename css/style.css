@@ -1,0 +1,194 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: Pacifico, sans-serif;
+}
+
+#header {
+  background-image: linear-gradient(to bottom, #11aaff,  #00ff55);
+  height: 100vh;
+}
+
+img {
+  margin-top: 5em;
+}
+
+.rounded-circle {
+  border: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+h2.border-bottom {
+  width: 50%;
+}
+
+#about {
+  
+}
+
+#skills {
+}
+
+.skill-img {
+  width: 6em;
+  height: 6em;
+  margin: .2em;
+}
+
+#portfolio {
+  
+}
+
+.card {
+  width: 20rem;
+  margin: 1em auto;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.project-1 {
+  background-image: linear-gradient(to bottom, #1ff, #00f);
+}
+
+.project-2 {
+  background-image: linear-gradient(to bottom, #1aa, #fff);
+}
+
+.project-3 {
+  background-image: linear-gradient(to bottom, #fcd, #81a);
+}
+
+.project-4 {
+  background-image: linear-gradient(to bottom, #1ff, #697);
+}
+
+.project-5 {
+  background-image: linear-gradient(to bottom, #1ff, #00f);
+}
+
+.project-6 {
+  background-image: linear-gradient(to bottom, #1aa, #fff);
+}
+
+.project-7 {
+  background-image: linear-gradient(to bottom, #fcd, #81a);
+}
+
+.project-8 {
+  background-image: linear-gradient(to bottom, #1aa, #fff);
+}
+
+.project-9 {
+  background-image: linear-gradient(to bottom, #1ff, #00f);
+}
+
+
+#freelance {
+  height: 50vh;
+}
+
+#contact {
+  
+}
+
+#footer {
+}
+
+#footer ul {
+  list-style: none;
+}
+
+/* Scroll to top */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 1.5em;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  coursor: pointer;
+  padding: .5em;
+  border-radius: 10%;
+}
+
+#scroll-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+/* For Mobile device */
+@media all and (max-width: 500px) {
+  body {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+  
+  .lead {
+    font-size: 0.8em;
+    color: #fff;
+  }
+  
+  .card {
+    margin-bottom: 1em;
+  }
+  
+  .skill-img {
+    width: 4em;
+    height: 4em;
+    margin: 0 auto;
+    padding: 0.3em;
+  }
+  
+  .card .btn-success {
+    font-size: 0.9em;
+  }
+  
+  .social {
+    margin-bottom: 2em;
+  }
+}
+
+/* For Landescape / Tablet device */
+  @media all and (max-width: 800px) {
+  body {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+    
+  h2.border-bottom {
+    width: 100%;
+  }
+    
+  h3 {
+    font-size: 0.9em;
+  }
+  
+  .social {
+    margin-bottom: 1em;
+  }
+    
+  #scroll-to-top {
+    padding: .3em;
+  }
+}
