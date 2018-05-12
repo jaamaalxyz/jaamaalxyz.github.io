@@ -1,208 +1,544 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1">
-  <title>Jamal Uddin</title>
+  <meta charset="UTF-8">
+  <title>Jamal Uddin | Front End Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- google fonts -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Pacifico">
-
-  <!-- latest compiled and minified Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- font awesome -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- custom CSS -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Pacifico'>
+  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!-- Navbars -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-toggle" aria-expanded="false">
-      	<span class="sr-only">Toggle navigation</span>
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://jamal-pb95.github.io/">Jamal Uddin</a>
-    </div>
 
-    <!-- Collect the nav links for toggling -->
-    <div class="collapse navbar-collapse" id="top-nav-toggle">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="https://medium.com/@jamal.pb95">Blog</a></li>
-        <li><a href="resume.pdf">Résumé</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary text-white">
+   <a class="navbar-brand mr-auto" href="#">Jamal Uddin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto text-uppercase">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="resume.pdf">Résumé</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
+  </nav><!-- End of Navigation -->
 
-<!-- Header -->
-<button onclick="topFunc()" id="scroll-to-top" title="Go to Top"><i class="fa fa-2x fa-arrow-circle-up" aria-hidden="true"></i></button>
-<header class="jumbotron">
-  <div class="text-center">
-    <img src="https://avatars2.githubusercontent.com/u/20262255?v=4&s=180" alt="jamal" class="img-circle">
-    <h3>Hello, This is <span class="jamal">Jamal Uddin</span> and I'm a</h3>
-    <h2>Motile <img class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/apple/129/fire_1f525.png" alt="fire"> Locomotive <img class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/samsung/137/hot-beverage_2615.png" alt="hot_popper"> Impetuous Developer</h2>
-    <h3>currently learning to code at <a target="_blank" href="https://www.freecodecamp.com/jamal-pb95">freeCodeCamp</a> and creating modern and responsive Web Applications</h3>
-    <a href="#contact"><button class="btn btn-primary btn-lg">Hire Me!</button></a>
-  </div>
-</header><!-- End of Header -->
+  <!-- Scroll to top -->
+  <button onclick="topFunc()" id="scroll-to-top" title="Go to Top"><i class="fas fa-2x fa-arrow-circle-up"></i></button>
+  <!-- End of Scroll to top -->
 
-<!-- about -->
-<section id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="about-header">ABOUT ME</h1>
-        <p class="about-text">I am a self-thought <span class="jamal">Front End Developer</span> living in Bangladesh. I love designing and developing rich web applications with user experience in mind. I like solving problems, designing clean interfaces and constantly being in move to learn new things. Oh! One thing I left now I am learning <span class="jamal">React.js</span> and looking for a job opportunity</p>
+  <!-- Header -->
+  <header id="header">
+    <div class="container-fluid text-center">
+      <figure class="figure">
+        <img src="images/jamal.jpg" class="rounded-circle" alt="jamal">
+      </figure>
+      <p class="lead">Hello, This is <span class="font-weight-bold">Jamal Uddin</span>, and I'm an</p>
+      <h1 class="text-uppercase text-white">Aspiring Front End Developer</h1>
+      <a href="#contact"><button class="btn btn-primary mt-3">Hire Me!</button></a>
+    </div>
+  </header><!-- End of Header -->
+
+  <!-- About Me -->
+  <section id="about" class="bg-success">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">ABOUT ME</h2>
+      </header>
+      <article>
+        <p class="lead pt-3 text-justify">I am a self-thought <span class="text-warning">Front End Developer</span> based in Bangladesh. I love designing and developing web applications with user experience in mind. I like solving problems, designing clean interfaces and constantly being in a move to learn new things.</p>
+        <p class="lead text-justify">Oh! One thing I left to share with you. Now I am learning <span class="text-warning">React.js</span> and looking for a job opportunity.</p>
+      </article>
+      <div class="d-flex flex-sm-row flex-column justify-content-around pb-3">
+        <div class="card bg-warning">
+          <img class="card-img-top" src="images/services/responsive-design.png" alt="responsive-web-design">
+          <div class="card-body">
+            <p class="card-text">Responsive Web Design</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <img class="card-img-top" src="images/services/react.jpg" alt="react.js-web-apps">
+          <div class="card-body">
+            <p class="card-text">React.js Web Apps Development</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <img class="card-img-top" src="images/services/front-end-development.png" alt="web-development">
+          <div class="card-body">
+            <p class="card-text">Front End Web Development</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-4 col-xs-12">
-        <img class="service-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/responsive-design.png?raw=true" alt="responsive-design">
-        <h3>Responsive Web Design</p>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <img class="service-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/react.jpg?raw=true" alt="react.js-web-apps">
-        <h3>React.JS Web Apps Development</p>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <img class="service-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/fe.png?raw=true" alt="web-development">
-        <p>Front End Web Development</p>
+  </section><!-- End of About -->
+
+  <!-- Skills -->
+  <section id="skills" class="bg-light">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="pt-5 font-weight-bold m-auto border-bottom">MY WEAPONS</h2>
+      </header>
+      <article class="container-fluid pt-3">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>I've experience to build with:</h3>
+            <img class="skill-img" src="images/skills/html.png" alt="html5">
+            <img class="skill-img" src="images/skills/css.png" alt="css3">
+            <img class="skill-img" src="images/skills/bootstrap.png" alt="bootstrap">
+            <img class="skill-img" src="images/skills/js.png" alt="js">
+            <img class="skill-img" src="images/skills/ES6.png" alt="js-es-6">
+            <img class="skill-img" src="images/skills/jquery.png" alt="jQuery">
+            <img class="skill-img" src="images/skills/sass.png" alt="sass">
+            <img class="skill-img" src="images/skills/ps.png" alt="photoshop">
+            <img class="skill-img" src="images/skills/Git-Logo.png" alt="git">
+            <img class="skill-img" src="images/skills/GitHub-Mark.png" alt="github">
+          </div>
+          <div class="col-md-6">
+            <h3>Currently Learning:</h3>
+            <img class="skill-img" src="images/skills/react.png" alt="react-js">
+            <img class="skill-img" src="images/skills/mdb.png" alt="mongoDB">
+            <img class="skill-img" src="images/skills/node.png" alt="nodeJS">
+            <img class="skill-img" src="images/skills/webpack.png" alt="webpack">
+          </div>
+        </div><!-- End of row -->
+      </article>
+    </div>
+  </section><!-- End of Skills -->
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-warning">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">FEW AWESOME THINGS I'VE DONE</h2>
+      </header>
+      <div class="d-flex flex-wrap pt-3">
+        
+        <!-- Project-1 -->
+        <div class="card project-1">
+          <img class="card-img-top" src="images/projects/project-1.png" alt="random-quote-machine">
+          <div class="card-body">
+            <h5 class="card-title">Random Quote Machine</h5>
+            <p class="card-text">#HTML5, #CSS3, #Bootstarp &amp; #JavaScript</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bolod"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="bolod" tabindex="-1" role="dialog" aria-labelledby="#randomQuoteLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="randomQuoteLabel">Random Quote Machine</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="665" data-theme-id="0" data-slug-hash="wraJqE" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Random Quote Machine" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/wraJqE/">Random Quote Machine</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-2 -->
+        <div class="card project-2">
+          <img class="card-img-top" src="images/projects/project-2.png" alt="survey-form">
+          <div class="card-body">
+            <h5 class="card-title">Ultimate Survey Form</h5>
+            <p class="card-text">#HTML5, #CSS3</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#survey"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="survey" tabindex="-1" role="dialog" aria-labelledby="#surveyLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="surveyLabel">Cat Survey Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="495" data-theme-id="0" data-slug-hash="RVywLR" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="FCC Survey Page" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/RVywLR/">FCC Survey Page</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-3 -->
+        <div class="card project-3">
+          <img class="card-img-top" src="images/projects/project-3.png" alt="url-shortner">
+          <div class="card-body">
+            <h5 class="card-title">Byte Size URL Shortner</h5>
+            <p class="card-text">#HTML5, #CSS3, #JSON, #AJAX, #Google URL Shortner APIs.</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#urlShort"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="urlShort" tabindex="-1" role="dialog" aria-labelledby="#urlShortLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="urlShortLabel">Byte Size URL Shortner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="620" data-theme-id="0" data-slug-hash="zPejYJ" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Byte Size" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/zPejYJ/">Byte Size</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-4 -->
+        <div class="card project-4">
+          <img class="card-img-top" src="images/projects/project-4.png" alt="Split Landing Page">
+          <div class="card-body">
+            <h5 class="card-title">Split Landing Page</h5>
+            <p class="card-text">#HTML5, #CSS3</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#split"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="split" tabindex="-1" role="dialog" aria-labelledby="#splitLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="splitLabel">Split Landing Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="545" data-theme-id="0" data-slug-hash="LezKqz" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Split Landing Page" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/LezKqz/">Split Landing Page</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-5 -->
+        <div class="card project-5">
+          <img class="card-img-top" src="images/projects/project-5.png" alt="JS Color Game">
+          <div class="card-body">
+            <h5 class="card-title">JS Color Game</h5>
+            <p class="card-text">#HTML5, #CSS3 &amp; #JavaScript</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#colorGame"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="colorGame" tabindex="-1" role="dialog" aria-labelledby="#colorGameLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="colorGameLabel">JS Color Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="483" data-theme-id="0" data-slug-hash="rJzEEQ" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Color Game" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/rJzEEQ/">Color Game</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-6 -->
+        <div class="card project-6">
+          <img class="card-img-top" src="images/projects/project-6.png" alt="weather app">
+          <div class="card-body">
+            <h5 class="card-title">Geo Location based Weather Viewer</h5>
+            <p class="card-text"></p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#weather"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="weather" tabindex="-1" role="dialog" aria-labelledby="#weatherLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="weatherLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="521" data-theme-id="0" data-slug-hash="dZqqoR" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Weather App" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/dZqqoR/">Weather App</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-7 -->
+        <div class="card project-7">
+          <img class="card-img-top" src="images/projects/project-7.png" alt="Random Color Generator">
+          <div class="card-body">
+            <h5 class="card-title">Random Color Generator</h5>
+            <p class="card-text">#HTML5, #CSS3, #JavaScript</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#colorGen"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="colorGen" tabindex="-1" role="dialog" aria-labelledby="#colorGenLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="colorGen">Random Color Generator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="500" data-theme-id="0" data-slug-hash="yKMvaG" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="randomColorGenerator" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/yKMvaG/">randomColorGenerator</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-8 -->
+        <div class="card project-8">
+          <img class="card-img-top" src="images/projects/project-8.png" alt="Bolod Fashion Shop">
+          <div class="card-body">
+            <h5 class="card-title">Bolod Fashion Shop</h5>
+            <p class="card-text">#HTML5, #CSS3, #JavaScript, #Bootstarp</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bolod"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="bolod" tabindex="-1" role="dialog" aria-labelledby="#bolodLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bolodLabel">JavaScript Docs</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="493" data-theme-id="0" data-slug-hash="EvgZVr" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Bolod Fashion Shop" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/EvgZVr/">Bolod Fashion Shop</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
+        
+        <!-- Project-9 -->
+        <div class="card project-9">
+          <img class="card-img-top" src="images/projects/project-9.png" alt="Kazi Nazrul Islam">
+          <div class="card-body">
+            <h5 class="card-title">Tribute of Kazi Nazrul Islam</h5>
+            <p class="card-text">#HTML5, #CSS3</p>
+            <a href=""><button class="btn btn-success"><i class="fab fa-github"></i> Github Repo</button></a>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nazrul"><i class="fas fa-code"></i> View Demo</button>
+            <!-- Modal -->
+            <div class="modal fade" id="nazrul" tabindex="-1" role="dialog" aria-labelledby="#nazrulLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="nazrulLabel">Tribute of Kazi Nazrul Islam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p data-height="508" data-theme-id="0" data-slug-hash="jmvvpz" data-default-tab="result" data-user="jamal-pb95" data-embed-version="2" data-pen-title="Kazi Nazrul Islam" class="codepen">See the Pen <a href="https://codepen.io/jamal-pb95/pen/jmvvpz/">Kazi Nazrul Islam</a> by Jamal Uddin (<a href="https://codepen.io/jamal-pb95">@jamal-pb95</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End of Modal -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>PERSONAL</h2>
-        <hr>
-        <p>Creative, Flexible, Team player, Relaxed, Eager for knowledge, Organized and Ambitious</p>
-      </div>
-      <div class="col-md-6">
-        <h2>INTEREST</h2>
-        <hr>
-          <p>Blogs and books, Cycling, Friends, Nasheed, Web Technologies, OSS, Maths, Programming & Data Science</p>
+  </section>
+
+  <!-- freelance bar -->
+  <section id="freelance" class="bg-info">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="text-white font-weight-bold m-auto border-bottom">LET'S WORK TOGETHER</h2>
+        <h3 class="pt-3">ARE YOU READY TO START?</h3>
+        <p>I'm available for freelance projects.</p>
+        <a href="#contact"><button class="btn btn-warning">Hire Me!</button></a>
+      </header>
+    </div>
+  </section><!-- End of Freelance -->
+
+  <!-- Blog -->
+  <section id="blog" class="bg-danger">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">FEW BLOG POSTS I'VE WRITTEN</h2>
+      </header>
+      <div class="d-flex flex-wrap pt-3">
+        <div class="card post-1">
+          <img class="card-img-top" src="images/blog-posts/post-1.png" alt="post-1">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
+        
+        <div class="card post-2">
+          <img class="card-img-top" src="images/blog-posts/post-2.png" alt="post-2">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
+        
+        <div class="card post-3">
+          <img class="card-img-top" src="images/blog-posts/post-3.png" alt="post-3">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
+        
+        <div class="card post-4">
+          <img class="card-img-top" src="images/blog-posts/post-4.png" alt="post-4">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
+        
+        <div class="card post-5">
+          <img class="card-img-top" src="images/blog-posts/post-5.png" alt="post-5">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
+
+        <div class="card post-6">
+          <img class="card-img-top" src="images/blog-posts/post-8.png" alt="post-8">
+          <div class="card-body">
+            <a href=""><button class="btn btn-warning btn-block"><i class="fa fa-paper-plane"></i> View on Medium</button></a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section><!-- End of About -->
+  </section><!-- End of Blog -->
 
+  <!-- Contact Form -->
+  <section id="contact" class="bg-success">
+    <div class="container">
+      <header class="text-center pt-3">
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">CONTACT WITH ME</h2>
+      </header>
+      <form method="GET" class="pt-3 pb-3">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Name" important>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" class="form-control" placeholder="Email" important>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" rows="5" placeholder="Enter your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-info btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+      </form>
+    </div>
+  </section>
 
-<!-- skills -->
-<section id="skills">
-  <div class="container">
-    <h1 class="text-center skill-header">My Weapons</h1>
-    <div class="flex-container row">
-      <div class="flex-item-1 col-md-8">
-        <h3>I am experienced with:</h3>
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/html.png?raw=true" alt="html5">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/css.png?raw=true" alt="css3">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/bootstrap.png?raw=true" alt="bootstrap">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/js.png?raw=true" alt="js">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/ES6.png?raw=true" alt="js-es-6">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/jquery.png?raw=true" alt="jQuery">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/sass.png?raw=true" alt="sass">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/ps.png?raw=true" alt="photoshop">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/Git-Logo.png?raw=true" alt="git">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/GitHub-Mark.png?raw=true" alt="github">
-      </div>
-      <div class="flex-item-2 col-md-4">
-	<h3>Currently Learning:</h3>
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/react.png?raw=true" alt="react-js">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/redux.png?raw=true" alt="react-js">
-	<img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/mdb.png?raw=true" alt="mongoDB">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/node.png?raw=true" alt="nodeJS">
-        <img class="skill-img" src="https://github.com/jamal-pb95/jamal-pb95.github.io/blob/master/webpack.png?raw=true" alt="webpack">
+  <!-- Footer -->
+  <section id="footer" class="bg-dark">
+    <div class="container">
+      <div class="row d-flex flex-sm-row flex-column justify-content-between text-white">
+        <div class="mt-2 col-md-4">
+          <p class="pb-2 font-weight-bold border-bottom border-white"><i class="fas fa-address-card"></i> Residence & Résumé</p>
+          <p><i class="fas fa-map-marker text-info"></i> Uttar Badda, Dhaka, Bangladesh</p>
+          <a href="https://stackoverflow.com/cv/jamal-pb95"><p><i class="fab fa-stack-overflow text-warning"></i> Stackoverflow Résumé</p></a>
+          <p><i class="fas fa-phone text-danger"></i> +8801717451209</p>
+        </div>
+        <div class="mt-2 col-md-4">
+          <p class="pb-2 font-weight-bold border-bottom border-white"><i class="fas fa-briefcase"></i> Employment Status:</p>
+          <p>MIS Executive, IT &amp; MIS</p>
+          <p><a href="#">National Polymer Group</a></p>
+        </div>
+        <div class="mt-2 col-md-4 social">
+          <p class="mb-3 pb-2 font-weight-bold border-bottom border-white">AROUND THE WEB</p>
+          <div class="mb-4 d-flex justify-content-around fa-2x">
+            <p><a href="#"><i class="fab fa-facebook text-light"></i></a></li>
+            <p><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <p><a href="#"><i class="fab fa-linkedin text-white"></i></a></li>
+            <p><a href="#"><i class="fab fa-github text-info"></i></a></li>
+            <p><a href="#"><i class="fab fa-codepen text-warning"></i></a></li>
+            <p><a href="#"><i class="fab fa-free-code-camp text-success"></i></a></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section><!-- End of Skills -->
+  </section>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script  src="js/index.js"></script>
 
-<!-- freelance bar -->
-<section id="freelance">
-  <div class="freelance container text-center">
-    <h2>ARE YOU READY TO START?</h2>
-    <h3>I'm available for freelance projects.</h3>
-    <a href="#contact"><button class="btn btn-default btn-block">Hire Me!</button></a>
-  </div>
-</section><!-- End of Freelance -->
-
-
-<!-- Contact -->
-<section id="contact" class="contact container-fluid">
-  <div class="contact-info">
-    <div class="contact-header text-center">
-      <h2>DROP ME A LINE</h2>
-      <p class="contact-text">Want to get in touch with me? Be it to request more info about myself or my experience or to ask for my resume just feel free to drop me a line anytime. I will get back to you as soon as possible.</p>
-    </div>
-    <form method="GET">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" important>
-      </div>
-      <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" id="email" class="form-control" placeholder="Email" important>
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea class="form-control" rows="5" placeholder="Enter your message here..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-success"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
-    </form>
-  </div>
-</section><!-- End of Contact Form -->
-
-
-<!-- Footer -->
-<footer>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 address">
-        <p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="text">Gulshan Avenue, Dhaka, Bangladesh<span></p>
-        <p><i class="fa fa-phone-square" aria-hidden="true"></i><span class="text">+88-01717451209<span></p>
-        <p><i class="fa fa-stack-overflow" aria-hidden="true"></i><a target="_blank" href="https://stackoverflow.com/cv/jamal-pb95"><span class="text">Stack Overflow Resume</a><span></p>
-      </div>
-      <div class="col-md-4 employment">
-        <h2>Employment Status</h2>
-        <h3>MIS Executive, IT &amp; MIS</h3>
-        <p><a target="_blank" href="http://nationalpolymer.net/">National Polymer Group</a></p>
-        <h4>Gulshan Avenue, Dhaka, Bangladesh</h4>
-      </div>
-      <div class="col-md-4 social text-center">
-        <h2>AROUND THE WEB</h2>
-        <ul class="social-icon fa-3x">
-          <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer><!-- End of Footer -->
-
-
-<!-- Latest compiled and minified jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
