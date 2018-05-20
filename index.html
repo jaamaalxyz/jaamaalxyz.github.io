@@ -4,11 +4,11 @@
 <head>
   <!-- Meta stuffs-->
   <meta charset="UTF-8">
-  <title>Jamal Uddin || Front End Developer</title>
+  <title>Jamal Uddin | Front End Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CDN links for fonts, fontawesome5 & bootstrap4-->
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Pacifico'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway|Roboto'>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css'>
   <!-- Custom CSS file-->
   <link rel="stylesheet" href="css/style.css">
@@ -17,15 +17,15 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary font-weight-bold">
-    <a class="navbar-brand mr-auto" href="#">JAMAL UDDIN</a>
+    <a class="navbar-brand mr-auto text-white" href="#">JAMAL UDDIN</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav ml-auto text-uppercase">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
@@ -52,19 +52,13 @@
 
   <!-- Header -->
   <header id="header">
-    <section class="container-fluid d-flex flex-column align-items-center justify-content-center">
-      <figure class="figure">
-        <img src="images/jamal.png" class="rounded-circle" alt="jamal">
-      </figure>
-      <article>
-        <p class="lead text-center">Jamal Uddin</p>
-        <h1 class="text-uppercase">Front End Developer</h1>
-      </article>
-      <article id="scroll-down" class="scroll">
+    <section class="container-fluid d-flex flex-column align-items-center justify-content-center text-uppercase">
+      <img src="images/jamal.png" class="rounded-circle" alt="jamal">
+      <h4 class="mt-5">A passionate | self-taught</h4>
+      <h1 class="font-weight-bold">Front End Developer</h1>
+      <p class="font-weight-bold intro">More than anything, I love building applications that make people's lives easier. </p>
+      <article id="scroll-down" class="scroll"><!-- Scroll down logo -->
         <a href="#about"><span></span></a>
-      </article>
-      <article>
-        <a href="#contact"><button class="btn btn-primary">Hire Me!</button></a>
       </article>
     </section>
   </header><!-- End of Header -->
@@ -82,19 +76,19 @@
       </article>
       <div class="d-flex flex-sm-row flex-column justify-content-around pb-3">
         <div class="card bg-warning">
-          <img class="card-img-top" src="images/services/responsive-design.png" alt="responsive-web-design">
+          <img class="card-img-top" src="images/services/rwd.png" alt="responsive-web-design">
           <div class="card-body">
             <p class="card-text">Responsive Web Design</p>
           </div>
         </div>
         <div class="card bg-warning">
-          <img class="card-img-top" src="images/services/react.jpg" alt="react.js-web-apps">
+          <img class="card-img-top" src="images/services/react.png" alt="react.js-web-apps">
           <div class="card-body">
-            <p class="card-text">React.js Web Apps Development</p>
+            <p class="card-text">React Web Apps Development</p>
           </div>
         </div>
         <div class="card bg-warning">
-          <img class="card-img-top" src="images/services/front-end-development.png" alt="web-development">
+          <img class="card-img-top" src="images/services/fe-dev.png" alt="web-development">
           <div class="card-body">
             <p class="card-text">Front End Web Development</p>
           </div>
@@ -107,7 +101,7 @@
   <section id="skills">
     <div class="container">
       <header class="text-center pt-3">
-        <h2 class="pt-5 font-weight-bold m-auto border-bottom">MY WEAPONS</h2>
+        <h2 class="pt-5 font-weight-bold m-auto border-bottom">MY SKILL SET</h2>
       </header>
       <article class="container-fluid">
         <div class="row">
@@ -140,7 +134,7 @@
   <section id="portfolio">
     <div class="container">
       <header class="text-center pt-3">
-        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">FEW AWESOME THINGS I'VE DONE</h2>
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">A FEW AWESOME THINGS I'VE BUILD</h2>
       </header>
       <div class="d-flex flex-wrap pt-3">
         
@@ -428,13 +422,11 @@
 
   <!-- freelance bar -->
   <section id="freelance">
-    <div class="container">
-      <header class="text-center pt-3">
-        <h2 class="text-white font-weight-bold m-auto border-bottom">LET'S WORK TOGETHER</h2>
-        <h3 class="pt-3">ARE YOU READY TO START?</h3>
-        <p>I'm available for freelance projects.</p>
-        <a href="#contact"><button class="btn btn-warning">Hire Me!</button></a>
-      </header>
+    <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+      <h2 class="text-white font-weight-bold border-bottom">LET'S WORK TOGETHER</h2>
+      <h3 class="pt-3">ARE YOU READY TO START?</h3>
+      <p>I'm available for freelance projects.</p>
+      <a id="hire-me" href="#contact"><button class="btn btn-warning">Hire Me!</button></a>
     </div>
   </section><!-- End of Freelance -->
 
@@ -442,7 +434,7 @@
   <section id="blog">
     <div class="container">
       <header class="text-center pt-3">
-        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">FEW BLOG POSTS I'VE WRITTEN</h2>
+        <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">BLOG POSTS I'VE WRITTEN</h2>
       </header>
       <div class="d-flex flex-wrap pt-3">
         <div class="card post-1">
@@ -496,7 +488,7 @@
       <header class="text-center pt-3">
         <h2 class="text-white pt-5 font-weight-bold m-auto border-bottom">CONTACT WITH ME</h2>
       </header>
-      <form method="GET" class="pt-3 pb-3">
+      <form method="GET" class="m-auto pt-3 pb-3">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" important>
