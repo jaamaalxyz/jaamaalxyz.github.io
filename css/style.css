@@ -1,14 +1,22 @@
+html,
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
 }
 
+/* Navbar section */
 .navbar-brand {
-  font-family: Lato, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
+ul > li > a {
+  color: #fff !important;
+}
+
+/* Header section */
 #header {
-  background: url(https://www.nxworld.net/example/css-scroll-down-button/bg01.jpg) center center / cover no-repeat;
+  background: url('https://i.imgur.com/ZKYKj4k.jpg') center center / cover no-repeat;
+  background-color: rgba(1, 106, 189, 0.6);
   height: 100vh;
 }
 
@@ -20,20 +28,74 @@ img {
   border: 5px solid rgba(255, 255, 255, 0.7);
 }
 
-h2.border-bottom {
-  width: 50%;
+/* Scroll down arrow key */
+.scroll a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  transition: opacity .3s;
 }
 
+.scroll a:hover {
+  opacity: .5;
+}
+
+#scroll-down a {
+  padding-top: 80px;
+}
+
+#scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: scroll 2s infinite;
+          animation: scroll 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* About section */
 #about {
   background-color: grey;
 }
 
+/* Skills section */
 #skills {
   background-color: lightgray;
-}
-
-#skills .border-bottom {
-  width: 100%;
+  height: 100vh;
 }
 
 .skill-img {
@@ -42,12 +104,13 @@ h2.border-bottom {
   margin: .2em;
 }
 
+/* Portfolio section */
 #portfolio {
-  background-color: #ff9800;
+  background-color: #0f9875;
 }
 
 .card {
-  width: 20rem;
+  max-width: 20rem;
   margin: 1em auto;
 }
 
@@ -91,7 +154,7 @@ h2.border-bottom {
   background-image: linear-gradient(to bottom, #1ff, #00f);
 }
 
-
+/* Freelance section */
 #freelance {
   background-color: #00bcd4;
   height: 50vh;
@@ -101,14 +164,22 @@ h2.border-bottom {
   padding-top: 3.5em;
 }
 
+/* Blog section */
 #blog {
   background-color: #697;
 }
 
+/* Contact */
 #contact {
+  background-color: rgba(1, 106, 189, 0.6);
   height: 100vh;
 }
 
+#contact .container {
+  max-width: 70vw;
+}
+
+/* Footer section */
 #footer {
 }
 
@@ -142,34 +213,24 @@ h2.border-bottom {
   body {
     font-size: 1em;
   }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  h2 {
-    font-size: 1em;
-  }
-    
-  h2.border-bottom {
-    width: 100%;
-  }
-    
-  h3 {
-    font-size: 0.9em;
-  }
 
-  .hire-me {
-    padding: .4em .7em;
-    margin-top: 2em;
+  header {
+    text-align: center;
   }
 
   #skills {
     background-color: #fff;
   }
 
+  #about,
+  #skills,
+  #freelance,
   #contact {
     height: 100%;
+  }
+
+  #hire-me {
+    margin-bottom: 1em;
   }
   
   .social {
@@ -183,23 +244,22 @@ h2.border-bottom {
 
 /* For Mobile device */
 @media all and (max-width: 500px) {
-  body {
-    font-size: 1em;
+  h4 {
+    font-size: .8em;
   }
-  
+
   h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
-  
-  h2 {
-    font-size: 1em;
+
+  .intro {
+    font-size: .7em;
+  } 
+   
+  #skills h3 {
+    margin-top: 1em; 
   }
-  
-  .lead {
-    font-size: 0.8em;
-    color: #fff;
-  }
-  
+
   .card {
     margin-bottom: 1em;
   }
@@ -214,83 +274,19 @@ h2.border-bottom {
   .card .btn-success {
     font-size: 0.9em;
   }
+
+  #contact .container {
+    max-width: 100%;
+  }
   
   .social {
     margin-bottom: 2em;
   }
 }
 
-.scroll a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  transition: opacity .3s;
-}
-
-.scroll a:hover {
-  opacity: .5;
-}
-
-#scroll-down a {
-  padding-top: 80px;
-}
-
-#scroll-down a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-animation: scroll 2s infinite;
-          animation: scroll 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-
-#scroll-down a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-#scroll-down a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-          animation-delay: .15s;
-}
-
-#scroll-down a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+/* For Extra small mobile device */
+@media all and (max-width: 380px) {
+  .intro {
+    display: none;
   }
 }
