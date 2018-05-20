@@ -20,6 +20,12 @@ img {
   border: 5px solid rgba(255, 255, 255, 0.7);
 }
 
+.hire-me {
+  font-size: 1.2em;
+  padding: .6em 1em;
+  margin-top: 7em;
+}
+
 h2.border-bottom {
   width: 50%;
 }
@@ -29,6 +35,11 @@ h2.border-bottom {
 }
 
 #skills {
+  background-color: lightgray;
+}
+
+#skills .border-bottom {
+  width: 100%;
 }
 
 .skill-img {
@@ -88,7 +99,16 @@ h2.border-bottom {
 
 
 #freelance {
+  background-color: #11aaff;
   height: 50vh;
+}
+
+#freelance .container {
+  padding-top: 3.5em;
+}
+
+#blog {
+  background-color: #697;
 }
 
 #contact {
@@ -182,6 +202,15 @@ h2.border-bottom {
     
   h3 {
     font-size: 0.9em;
+  }
+
+  .hire-me {
+    padding: .4em .7em;
+    margin-top: 2em;
+  }
+
+  #skills {
+    background-color: #fff;
   }
   
   .social {
