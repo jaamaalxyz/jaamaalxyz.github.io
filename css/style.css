@@ -4,11 +4,11 @@ body {
 }
 
 .navbar-brand {
-  font-family: Pacifico, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 #header {
-  background-image: linear-gradient(to bottom, #11aaff,  #00ff55);
+  background: url(https://www.nxworld.net/example/css-scroll-down-button/bg01.jpg) center center / cover no-repeat;
   height: 100vh;
 }
 
@@ -20,18 +20,12 @@ img {
   border: 5px solid rgba(255, 255, 255, 0.7);
 }
 
-.hire-me {
-  font-size: 1.2em;
-  padding: .6em 1em;
-  margin-top: 7em;
-}
-
 h2.border-bottom {
   width: 50%;
 }
 
 #about {
-  
+  background-color: grey;
 }
 
 #skills {
@@ -49,7 +43,7 @@ h2.border-bottom {
 }
 
 #portfolio {
-  
+  background-color: #ff9800;
 }
 
 .card {
@@ -99,7 +93,7 @@ h2.border-bottom {
 
 
 #freelance {
-  background-color: #11aaff;
+  background-color: #00bcd4;
   height: 50vh;
 }
 
@@ -112,7 +106,7 @@ h2.border-bottom {
 }
 
 #contact {
-  
+  height: 100vh;
 }
 
 #footer {
@@ -143,6 +137,50 @@ h2.border-bottom {
 }
 
 /* Media Queries */
+/* For Landescape / Tablet device */
+  @media all and (max-width: 800px) {
+  body {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+    
+  h2.border-bottom {
+    width: 100%;
+  }
+    
+  h3 {
+    font-size: 0.9em;
+  }
+
+  .hire-me {
+    padding: .4em .7em;
+    margin-top: 2em;
+  }
+
+  #skills {
+    background-color: #fff;
+  }
+
+  #contact {
+    height: 100%;
+  }
+  
+  .social {
+    margin-bottom: 1em;
+  }
+    
+  #scroll-to-top {
+    padding: .3em;
+  }
+}
+
 /* For Mobile device */
 @media all and (max-width: 500px) {
   body {
@@ -182,42 +220,77 @@ h2.border-bottom {
   }
 }
 
-/* For Landescape / Tablet device */
-  @media all and (max-width: 800px) {
-  body {
-    font-size: 1em;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  h2 {
-    font-size: 1em;
-  }
-    
-  h2.border-bottom {
-    width: 100%;
-  }
-    
-  h3 {
-    font-size: 0.9em;
-  }
+.scroll a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  transition: opacity .3s;
+}
 
-  .hire-me {
-    padding: .4em .7em;
-    margin-top: 2em;
-  }
+.scroll a:hover {
+  opacity: .5;
+}
 
-  #skills {
-    background-color: #fff;
+#scroll-down a {
+  padding-top: 80px;
+}
+
+#scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: scroll 2s infinite;
+          animation: scroll 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+#scroll-down a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#scroll-down a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+}
+
+#scroll-down a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
   }
-  
-  .social {
-    margin-bottom: 1em;
+  50% {
+    opacity: 1;
   }
-    
-  #scroll-to-top {
-    padding: .3em;
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
