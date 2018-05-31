@@ -94,20 +94,19 @@ ul > li > a {
 
 /* About section */
 #about {
-  background-color: grey;
-  height: 100vh;
-}
-
-/* Skills section */
-#skills {
-  background-color: lightgray;
-  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .skill-img {
-  width: 6em;
-  height: 6em;
   margin: .2em;
+}
+
+.col-md-7 {
+  border-right: 1px solid gray;
+}
+
+.col-md-5 {
+  padding-top: 3em;
 }
 
 /* Portfolio section */
@@ -220,12 +219,14 @@ ul > li > a {
     font-size: 1em;
   }
 
-  #skills {
-    background-color: #fff;
+  .col-md-7 {
+    border-right: 0;
   }
 
-  #about,
-  #skills,
+  .col-md-5 {
+    padding-top: .5em;
+  }
+
   #freelance,
   #contact {
     height: 100%;
@@ -256,10 +257,6 @@ ul > li > a {
 
   #scroll-down a {
     padding-top: 3em;
-  }
-   
-  #skills h3 {
-    margin-top: 1em; 
   }
 
   .card {
