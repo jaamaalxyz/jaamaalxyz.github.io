@@ -1,5 +1,5 @@
 // Profile toggle animation
-$('.profile-btn').click(function() {
+$('.button').click(function() {
   $(this).toggleClass('active');
   return $('.box').toggleClass('open');
 });
