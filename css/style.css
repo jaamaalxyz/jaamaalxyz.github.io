@@ -26,13 +26,6 @@ ul > li > a {
   border: 5px solid rgba(255, 255, 255, 0.7);
 }
 
-/* Pro-card */
-.pro-card {
-  background-color: rgba(1, 115, 244, .4);
-  box-shadow: 0 .5em .5em 0 rgba(0, 0, 0, 0.2);
-  margin: 6em auto;
-}
-
 /* Scroll down arrow key */
 .scroll a {
   position: absolute;

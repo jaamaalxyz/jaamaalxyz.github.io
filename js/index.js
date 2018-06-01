@@ -1,3 +1,10 @@
+// Profile toggle animation
+$('.btn').click(function() {
+  $(this).toggleClass('active');
+  return $('.box').toggleClass('open');
+});
+
+
 // scroll to top button
 $(document).ready(function(){
   $(window).scroll(function() {
@@ -17,8 +24,7 @@ $(document).ready(function(){
 });
 
 
-// scroll
-
+// scroll down with slow motion
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
