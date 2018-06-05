@@ -103,7 +103,7 @@ ul > li > a {
 }
 
 .learning-img {
-  margin: .6em;
+  margin: .2em;
 }
 
 /* Portfolio section */
@@ -179,14 +179,6 @@ ul > li > a {
 
 #contact .container {
   max-width: 70vw;
-}
-
-/* Footer section */
-#footer {
-}
-
-#footer ul {
-  list-style: none;
 }
 
 /* Scroll to top */
