@@ -1,10 +1,3 @@
-// Profile toggle animation
-$('.button').click(function() {
-  $(this).toggleClass('active');
-  return $('.box').toggleClass('open');
-});
-
-
 // scroll to top button
 $(document).ready(function(){
   $(window).scroll(function() {
