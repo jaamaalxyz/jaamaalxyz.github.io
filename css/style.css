@@ -102,6 +102,10 @@ ul > li > a {
   padding-top: 3em;
 }
 
+.learning-img {
+  margin: .6em;
+}
+
 /* Portfolio section */
 #portfolio {
   background-color: #0f9875;
@@ -276,7 +280,6 @@ ul > li > a {
   }
 }
 
-/* For Extra small mobile device */
-@media all and (max-width: 380px) {
-
+.text-purple {
+  color: purple;
 }
