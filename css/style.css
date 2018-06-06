@@ -225,12 +225,12 @@ ul > li > a {
     padding-top: .5em;
   }
 
-  #freelance,
   #contact {
     height: 100%;
   }
 
   #freelance {
+    height: 400px;
     padding-top: 2em;
     padding-bottom: 2em;
   }
