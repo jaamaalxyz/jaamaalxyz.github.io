@@ -90,7 +90,7 @@ ul > li > a {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.skill-img {
+/*.skill-img {
   margin: .2em;
 }
 
@@ -104,11 +104,11 @@ ul > li > a {
 
 .learning-img {
   margin: .2em;
-}
+}*/
 
 /* Portfolio section */
 #portfolio {
-  background-color: #0f9875;
+
 }
 
 .card {
