@@ -176,8 +176,8 @@ ul > li > a {
 }
 
 /* Blog section */
-#blog {
-
+#blog .card {
+  background-color: #947;
 }
 
 /* Contact */
