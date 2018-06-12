@@ -87,28 +87,18 @@ ul > li > a {
 
 /* About section */
 #about {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-/*.skill-img {
-  margin: .2em;
+/* Skills & tools*/
+#skills {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 80vh;
 }
-
-.col-md-7 {
-  border-right: 1px solid gray;
-}
-
-.col-md-5 {
-  padding-top: 3em;
-}
-
-.learning-img {
-  margin: .2em;
-}*/
 
 /* Portfolio section */
 #portfolio {
-
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card {
@@ -176,18 +166,47 @@ ul > li > a {
 }
 
 /* Blog section */
+#blog {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 #blog .card {
   background-color: #947;
 }
 
 /* Contact */
 #contact {
-  background-color: rgba(1, 106, 189, 0.6);
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70vh;
 }
 
-#contact .container {
-  max-width: 70vw;
+#contact h2 {
+  font-weight: 900;
+}
+
+#online p {
+  height: 2em;
+  width: 2em;
+  margin-right: .3em;
+  margin-left: .3em;
+  padding: .2em;
+  border: 2px solid purple;
+  border-radius: 100%;
+}
+
+#online p:hover {
+  background-color: rgba(0, 0, 0, .3);
+  border-color: lightgray;
+  transition: background-color .4s;
+}
+
+/* Footer */
+footer h3 {
+  font-weight: 900;
+}
+
+footer #heart {
+  color: #f02;
 }
 
 /* Scroll to top */
@@ -212,27 +231,13 @@ ul > li > a {
 
 /* Media Queries */
 /* For Landescape / Tablet device */
-  @media all and (max-width: 800px) {
+@media all and (max-width: 800px) {
   body {
     font-size: 1em;
   }
 
-  .col-md-7 {
-    border-right: 0;
-  }
-
-  .col-md-5 {
-    padding-top: .5em;
-  }
-
-  #contact {
+  #skills {
     height: 100%;
-  }
-
-  #freelance {
-    height: 400px;
-    padding-top: 2em;
-    padding-bottom: 2em;
   }
     
   #freelance h2 {
@@ -246,9 +251,9 @@ ul > li > a {
   #hire-me {
     margin-bottom: 1em;
   }
-  
-  .social {
-    margin-bottom: 1em;
+
+  #contact {
+    height: 85vh;
   }
     
   #scroll-to-top {
@@ -274,23 +279,23 @@ ul > li > a {
     margin-bottom: 1em;
   }
   
-  .skill-img {
-    width: 4em;
-    height: 4em;
-    margin: 0 auto;
-    padding: 0.3em;
-  }
-  
   .card .btn-success {
     font-size: 0.9em;
   }
 
-  #contact .container {
-    max-width: 100%;
+  #skills h2 {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #fff;
   }
-  
-  .social {
-    margin-bottom: 2em;
+
+  #contact {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: 100%;
+  }
+
+  footer h3 {
+    padding: 2em 0 2em 0;
   }
 }
 
