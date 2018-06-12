@@ -167,7 +167,7 @@ ul > li > a {
   font-weight: 900;
 }
 
-.map {
+.static-bg-img {
   width: 100%;
   background-image: url('https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4aa7c7ba2dc66b8356a402164508e746&auto=format&fit=crop&w=804&q=80');
   background-position: top;
