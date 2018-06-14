@@ -193,7 +193,7 @@ ul > li > a {
 #online p:hover {
   background-color: rgba(0, 0, 0, .3);
   border-color: lightgray;
-  transition: background-color .4s;
+  transition: background-color .4s ease-in, border-color .4s ease-in;
 }
 
 /* Footer */
