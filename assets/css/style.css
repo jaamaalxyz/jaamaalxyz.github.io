@@ -203,7 +203,7 @@ footer h3 {
 }
 
 footer #heart {
-  color: #f02;
+  color: rgb(184, 27, 48);
 }
 
 /* Scroll to top */
@@ -227,7 +227,7 @@ footer #heart {
 }
 
 /* Media Queries */
-/* For Landescape / Tablet device */
+/* For Landscape / Tablet device */
 @media all and (max-width: 800px) {
   body {
     font-size: 1em;
