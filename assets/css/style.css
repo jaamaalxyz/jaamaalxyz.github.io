@@ -15,8 +15,8 @@ ul > li > a {
 
 /* Header section */
 #header {
-  background: url('https://i.imgur.com/ZKYKj4k.jpg') center center / cover no-repeat;
-  background-color: rgba(1, 106, 189, 0.6);
+  background: url('../images/bg-img/bg1.jpg') center center / cover no-repeat;
+  background-color: rgb(88, 179, 231);
   height: 100vh;
 }
 
@@ -92,13 +92,13 @@ ul > li > a {
 
 /* Skills & tools*/
 #skills {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #1CAFAA;
   height: 80vh;
 }
 
 /* Portfolio section */
 #portfolio {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(90, 53, 10, 0.432);
 }
 
 .card {
@@ -172,7 +172,8 @@ ul > li > a {
 
 /* Contact */
 #contact {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #DFCC7B
+  ;
   height: 70vh;
 }
 
