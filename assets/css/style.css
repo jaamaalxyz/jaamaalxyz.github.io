@@ -172,13 +172,18 @@ ul > li > a {
 
 /* Contact */
 #contact {
-  background-color: #DFCC7B
-  ;
-  height: 70vh;
+  background-color: #DFCC7B;
+  
 }
 
 #contact h2 {
   font-weight: 900;
+  margin-top: 60px;
+}
+
+#map {
+  height: 300px;
+  width: 60%;
 }
 
 #online p {
