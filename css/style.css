@@ -15,7 +15,7 @@ ul > li > a {
 
 /* Header section */
 #header {
-  background: url('../images/bg-img/bg1.jpg') center center / cover no-repeat;
+  background: url('../assets/images/bg-img/bg1.jpg') center center / cover no-repeat;
   background-color: rgb(88, 179, 231);
   height: 100vh;
 }
