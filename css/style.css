@@ -9,7 +9,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-ul > li > a {
+ul>li>a {
   color: #fff !important;
 }
 
@@ -32,7 +32,7 @@ ul > li > a {
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   transition: opacity .3s;
 }
 
@@ -54,9 +54,9 @@ ul > li > a {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -webkit-animation: scroll 2s infinite;
-          animation: scroll 2s infinite;
+  animation: scroll 2s infinite;
   opacity: 0;
   box-sizing: border-box;
 }
@@ -65,9 +65,11 @@ ul > li > a {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -77,9 +79,11 @@ ul > li > a {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -155,8 +159,8 @@ ul > li > a {
   background-size: cover;
 }
 
-#freelance > h2,
-#freelance > h3 {
+#freelance>h2,
+#freelance>h3 {
   font-weight: 900;
 }
 
@@ -172,7 +176,7 @@ ul > li > a {
 /* Contact */
 #contact {
   background-color: #DFCC7B;
-  
+
 }
 
 #contact h2 {
@@ -181,8 +185,8 @@ ul > li > a {
 }
 
 #map {
-  height: 300px;
-  width: 60%;
+  height: 400px;
+  width: 70%;
 }
 
 #online p {
@@ -240,11 +244,11 @@ footer #heart {
   #skills {
     height: 100%;
   }
-    
+
   #freelance h2 {
     font-size: 1.3em;
   }
-  
+
   #freelance h3 {
     font-size: 1.1em;
   }
@@ -256,7 +260,7 @@ footer #heart {
   #contact {
     height: 85vh;
   }
-    
+
   #scroll-to-top {
     padding: .3em;
   }
@@ -279,7 +283,7 @@ footer #heart {
   .card {
     margin-bottom: 1em;
   }
-  
+
   .card .btn-success {
     font-size: 0.9em;
   }
