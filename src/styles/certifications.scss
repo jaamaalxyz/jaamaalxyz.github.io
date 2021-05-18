@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.about-cert {
+   // margin-left: 50px;
+    flex: 1;
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'center';
+}
+
+// media="print" onload="this.media='all'
+
+.cert-name {
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 600px) {
+    
+    font-size: 16px;
+
+    }
+
+    &:hover {
+        color: #2a73cc;  
+    }
+}
+
+.cert-name-pluralsight {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+
+    @media only screen and (max-width: 600px) {
+    
+    font-size: 16px;
+
+    }
+
+    &:hover {
+        color: #ed2265; 
+    }
+}
+
+.cert-name-girlscript {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+
+    @media only screen and (max-width: 600px) {
+
+    font-size: 16px;
+    }
+
+    &:hover {
+        color: #ea6f06;  
+    }
+}
+
+.cert-name-udemy {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+
+    @media only screen and (max-width: 600px) {
+    
+
+    font-size: 16px;
+    }
+
+    &:hover {
+        color: #ea5252;
+    }
+}
+
+.cert-name-google {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 600px) {
+    
+    font-size: 16px;
+
+    }
+
+    &:hover {
+        color: #f5ce07;
+    }
+}
+
+.cert-name-google1 {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 600px) {
+    
+    font-size: 16px;
+
+    }
+
+    &:hover {
+        color: #34a853;
+    }
+}
+
+.cert-name-freecodecamp {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #a6bdbf;
+  //  text-align: left;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 600px) {
+    
+    font-size: 16px;
+
+    }
+
+    &:hover {
+        color:#f5f6f7;
+    }
+}
+
+
+.cert-desc {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 19px;
+    text-decoration: none;
+
+    &:hover{
+        color: #ffffff;
+    }
+
+    @media only screen and (max-width: 600px) {
+    
+        font-size: 13px;
+
+        }
+    
+    
+  //  text-align: left;
+}
+
+.heading-cert {
+    margin-top: 100px;
+    color: #ffffff;
+    //margin-top: -20px;
+   // margin-left: 50px;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    margin-bottom: 30px;
+    margin-left: 22px;
+   
+    @keyframes fadeInAnimation { 
+      0% { 
+          opacity: 0; 
+      } 
+      100% { 
+          opacity: 1; 
+      }
+    } 
+  
+    @media only screen and (max-width: 600px) {
+
+      font-size: 1.7rem;
+      margin-top: 0px;
+      display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .number-about {
+        font-size: 1.4rem;
+        color: #007fff;
+    }
+}
+
+.col1 .col2 .col3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+
+    @media only screen and (max-width: 600px) {
+        margin: 0px;
+    }
+}
+
+.card {
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #0a192f;
+    border-radius: 4px;
+    background-color: #08182e;
+    box-shadow: 6px 6px 3px #071120 ;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 3px 3px 1px #071120 ;
+
+        .cert-name {
+        color: #2a73cc;  
+        }
+
+        .cert-name-pluralsight{
+            color: #ed2265; 
+
+        }
+
+        .cert-name-girlscript{
+            color: #ea6f06;  
+
+        }
+
+        .cert-name-udemy {
+            color: #ea5252;
+
+        }
+
+        .cert-name-google {
+            color: #f5ce07;
+
+        }
+
+        .cert-name-google1 {
+            color: #34a853;
+
+        }
+
+        .cert-name-freecodecamp {
+            color:#f5f6f7;
+        }
+
+    }
+    
+    @media only screen and (max-width: 600px) {
+        
+        margin-bottom: 15px;
+        min-width: 300px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        box-shadow: 3px 3px 2px #071120 ;
+    }
+}
+

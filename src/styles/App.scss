@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  background-color: #0a192f;
+  display: flex;
+  justify-content: center;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  scroll-behavior: smooth;
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 1.62671rem;
+}
+h3 {
+  font-size: 1.38316rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85028rem;
+}
+h6 {
+  font-size: 0.78405rem;
+}
+ul {
+  margin-left: 1.45rem;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700&display=swap");
+
+$link-color: #007fff; // slateblue
+// $link-color: #303C55; // picasso blue
+// $link-color: rgba(0, 127, 225, 0.75);
+
+article {
+  //margin-left: 30px;
+  max-width: 1000px;
+  margin-top: 140px;
+  padding: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #36363c;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  h1 {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 2.1rem;
+  }
+
+  .highlight-link {
+    text-decoration: none;
+    color: #9ab1c4;
+    display: inline-block;
+    padding: 0px 7px;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 $link-color;
+    &:hover {
+      box-shadow: inset 0 -47px 0 0 $link-color;
+      color: white;
+    }
+  }
+
+  .arrow-link {
+    color: #007fff;
+    //background-color: #0a192f;
+    font-weight: bold;
+    border: #007fff;
+    font-family: "Roboto Mono", monospace;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+
+    background-color: #0a192f;
+    color: #007fff;
+    border: 2px solid #007fff;
+
+    @media only screen and (max-width: 600px) {
+      padding: 8px 18px;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+
+    &:after {
+      position: relative;
+      bottom: 0.2ex;
+      margin-left: 10px;
+      border: 2px solid #007fff;
+      color: $link-color;
+      font-family: "FontAwesome";
+      font-size: 1.5rem;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transition: all 0.15s ease-in-out;
+    }
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: rgba(100, 180, 255, 0.07);
+      color: #007fff;
+    }
+
+    &:hover:after {
+      transform: translateX(7px);
+    }
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Mono:wght@300&display=swap");
+
+.intro {
+  margin-top: 100px;
+  color: $link-color;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+}
+
+.name {
+  color: #ffffff;
+  //margin-top: -20px;
+  margin-left: -4px;
+  font-size: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.3rem;
+    margin-left: 0px;
+  }
+}
+
+.aftername {
+  margin-top: -10px;
+  font-size: 2.5rem;
+  color: #a6bdbf;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.1rem;
+  }
+}
+
+.desc {
+  margin-top: 50px;
+  //font-family: 'Abel', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  margin-inline-end: 300px;
+  color: #a6bdbf;
+  font-weight: lighter;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+    margin-inline-end: 0px;
+    font-size: 1.1rem;
+  }
+}
+
+.mail {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.contain {
+  display: inline-block;
+}
+
+.myavatar {
+  -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
+  filter: drop-shadow(5px 5px 5px #222);
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  margin-bottom: 450px;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    width: 35%;
+  }
+}
+
+span.animate-hand {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.2s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 1.8rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  } /* The following four values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
