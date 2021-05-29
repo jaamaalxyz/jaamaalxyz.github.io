@@ -1,4 +1,1 @@
-# jaamaal95.github.io
-
-My Portfolio Website
-Live link: [https://jaamaal.com](https://jaamaal.com/)
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
