@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Md. Jamal Uddin | Data Analyst - MIS Executive - Software Developer - Writer - Muslim - Bangladeshi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
