@@ -4,45 +4,46 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Md. Jamal Uddin | Data Analyst - MIS Executive - Software Developer - Writer - Muslim - Bangladeshi</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Md. Jamal Uddin | Data Analyst - MIS Executive - Developer - Content Creator - Muslim - Bangladeshi</title>
+        <link rel="icon" href="/images/logo.png" />
       </Head>
 
       <main>
+        <img className="hero" src="images/avatar.jpg" alt="Md. Jamal Uddin" />
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Jamal's Official Website</a>
+          Md. Jamal Uddin
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <span>Data Analyst</span> | <span>MIS Executive</span> | <span>Tech Content Creator</span>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/about" className="card">
+            <h3>About Me &rarr;</h3>
+            <p>Find in-depth information about me and my education.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/works" className="card">
+            <h3>Experience &rarr;</h3>
+            <p>Learn about more about my experience and expertise!</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="projects"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Projects &rarr;</h3>
+            <p>know more about my completed projects.</p>
+          </a>
+
+          <a
+            href="/contact"
+            className="card"
+          >
+            <h3>Contact &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Find my online presence and contact via your easiest way.
             </p>
           </a>
         </div>
@@ -76,6 +77,13 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .hero {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 1px solid #000;
         }
 
         footer {
