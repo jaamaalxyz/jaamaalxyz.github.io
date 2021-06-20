@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="primary-header">
-      <nav class="nav bd-grid">
+      <nav class="nav bd-grid" id="navbar">
         <div>
           <a href="/" class="nav__logo">Jamal</a>
         </div>
@@ -34,7 +34,7 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#project" class="nav__link">Projects</a>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
               <a href="#blog" class="nav__link">Blog</a>
@@ -51,7 +51,7 @@
       </nav>
     </header>
 
-    <main class="l-main">
+    <main class="l-main" id="welcome-section">
       <!-- HOME -->
       <section class="home bd-grid" id="home">
         <div class="home__data">
@@ -177,33 +177,33 @@
       </section>
 
       <!-- PROJECT SECTION -->
-      <!-- 
-      <section class="project section" id="project">
+      
+      <section class="project section" id="projects">
         <h2 class="section-title">Projects</h2>
 
-        <div class="project__container bd-grid"> -->
+        <div class="project__container bd-grid">
       <!-- PROJECT 1 -->
-      <!-- <div class="project__content">
-            <a href="https://flick-app.netlify.app/"
+      <div class="project__content project-tile">
+            <a href="https://anabia.netlify.app/tribute.html"
               ><img
                 src="/assets/work-img/work1.png"
                 alt="project-image"
                 class="project__img"
             /></a>
             <div class="project__data">
-              <a href="https://flick-app.netlify.app/">
-                <h2 class="project__title">Flick</h2>
+              <a href="https://anabia.netlify.app/tribute.html">
+                <h2 class="project__title">Tribute Page</h2>
               </a>
               <span class="project__subtitle"
-                >A movie seat web and mobile application.</span
+                >Tribute to National Poet</span
               >
               <a
-                href="https://github.com/zahrakhadijha/flick"
+                href="https://github.com/jaamaal95/anabia"
                 class="button button-link"
                 >View on Github</a
               >
             </div>
-          </div> -->
+          </div>
 
       <!-- PROJECT 2 -->
       <!-- <div class="project__content">
@@ -365,7 +365,7 @@
         <a href="https://twitter.com/jaamaal95" class="footer__icon"
           ><i class="bx bxl-twitter"></i
         ></a>
-        <a href="https://github.com/jaamaal95" class="footer__icon"
+        <a href="https://github.com/jaamaal95" id="profile-link" target="_blank" class="footer__icon"
           ><i class="bx bxl-github"></i
         ></a>
       </div>
