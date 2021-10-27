@@ -554,9 +554,36 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .blog__area:hover {
   background-color: rgb(206, 233, 218);
   transition: all 0.1ms smooth;
+}
+
+.medium {
+  background-color: rgba(192, 201, 199, 0.726);
+}
+
+.blog__area h2 {
+  margin-bottom: 10px;
+}
+
+.blog__area a {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bact-to-home {
+  display: block;
+  background-color: rgb(105, 207, 118);
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bact-to-home:hover {
+  background-color: #2bc6f5;
 }
