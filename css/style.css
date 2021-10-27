@@ -557,6 +557,6 @@ img {
 }
 
 .blog__area:hover {
-  background-color: rgb(240, 230, 230);
+  background-color: rgb(206, 233, 218);
   transition: all 0.1ms smooth;
 }
