@@ -17,13 +17,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>
+      <main className="flex flex-col justify-center items-center h-screen">
+        <h3 className="text-xl text-teal-500 uppercase">jaamaal.com</h3>
+        <h1 className="text-3xl text-teal-700">
           Welcome to the Digital Garden of a self-taught Software Developer
         </h1>
+        <h3>Myself Md. Jamal Uddin</h3>
+        <p>I built web application using TypeScript, React.js and Node.js</p>
       </main>
-      <footer>
-        Built with <a href="https://nextjs.org/docs/">Next.js</a>
+      <footer className="flex justify-center">
+        Built with 💖 by &nbsp;<a href="https://nextjs.org/docs/">Next.js</a>
       </footer>
     </div>
   );
