@@ -8,8 +8,8 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>
-          Jaamaal.com - Digital Garden of a self-taught Software Developer - Md.
-          Jamal Uddin (@jaamaal)
+          Digital Garden of a self-taught Software Developer - Md. Jamal Uddin
+          (@jaamaal)
         </title>
         <meta
           name="description"
