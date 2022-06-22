@@ -5,14 +5,14 @@
 - 🤔 &nbsp; Exploring new technologies and developing web & mobile applications.
 - 💼 &nbsp; Working as a Software Developer
 - 🎓 &nbsp; Undergrade Computer Science Student at [IUS](https://ius.edu.bd/)
-- 👨‍💻 &nbsp; Checkout my work at [https://jaamaal.com](https://jaamaal.vercel.app/)
-- 📝 &nbsp; Try to write articles on [my blog](https://jaamaal.vercel.app/blog), [Dev.to](https://dev.to/jaamaal95), [Hashnode](https://jaamaal95.hashnode.dev/) and [Medium.com](https://medium.com/@jaamaal95)
-- 🌱 &nbsp; Learning more about `DevOps`, `Frontend` and `Backend` technologies.
+- 👨‍💻 &nbsp; Checkout my work at [https://jaamaal.com](https://jaamaal.com/)
+- 📝 &nbsp; Try to write articles on [Medium.com](https://medium.com/@jaamaal95) and [Dev.to](https://dev.to/jaamaal95)
+- 🌱 &nbsp; Learning more about `Fullstack Software Development` from start to deployment.
 - 📫 &nbsp; How to reach me: jamal.pb95@gmail.com
 
 ### 🛠 Tech Stack
 
-- 💻 &nbsp; `JavaScript` | `TypeScript` | `Node.js` | `Express.js` | `Python` | `C++`
+- 💻 &nbsp; `JavaScript` | `TypeScript` | `Node.js` | `Express.js` | `C` | `C++`
 - 🌐 &nbsp; `React` | `Redux` | `Next.js` | `React Native` | `Tailwind CSS` | `Chakra UI`
 - 🛢 &nbsp; `Oracle DB` | `MySQL` | `MongoDB`
 - 🖥 &nbsp; `VS Code` | `Ubuntu` | `Oracle Linux`
