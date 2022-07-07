@@ -1,4 +1,4 @@
-## Hey there! This is Md. Jamal Uddin (@jaamaal)
+## Hey there! This is Md. Jamal Uddin (@jaamaalxyz)
 
 ### 👨🏻‍💻 About Me
 
