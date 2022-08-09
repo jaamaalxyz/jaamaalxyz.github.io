@@ -1,10 +1,11 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+
+import Footer from '../components/Footer';
 import Layout from '../components/Layout';
-import Footer from '../components/UI/Footer';
-import H1 from '../components/UI/Footer/H1';
-import H2 from '../components/UI/Footer/H2';
+import H1 from '../components/UI/H1';
+import H2 from '../components/UI/H2';
 
 const Blog: NextPage = () => (
   <>
