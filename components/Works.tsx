@@ -50,6 +50,14 @@ const Works: React.FC = () => (
         </a>
       </Link>
     </p>
+    <p>
+      Conduct <span className="text-blue-400">programming classes</span> for
+      <span className="text-amber-400"> beginners</span> and
+    </p>
+    <p>
+      <span className="text-orange-400">Mentoring</span> junior developers
+      <span className="text-purple-600"> in-person</span>
+    </p>
   </section>
 );
 
