@@ -1,10 +1,10 @@
 import React from 'react';
+import H2 from './UI/H2';
+import Section from './UI/Section';
 
 const Philosophies: React.FC = () => (
-  <section className="py-10">
-    <h2 className="text-5xl font-extrabold text-green-500 py-10">
-      Guiding Philoshophies
-    </h2>
+  <Section>
+    <H2 subTitle="Guiding Philoshophies" color="text-green-700" />
     <div className="pl-1">
       <p>
         There&apos;s always a <span className="text-orange-300">kind</span>{' '}
@@ -27,7 +27,7 @@ const Philosophies: React.FC = () => (
         priceless
       </p>
     </div>
-  </section>
+  </Section>
 );
 
 export default Philosophies;
