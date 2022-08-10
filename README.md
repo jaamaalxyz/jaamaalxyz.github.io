@@ -1,6 +1,6 @@
 # Md. Jamal Uddin
 
-Full Stack Software Developer - `React` (Native) | `Node.js` | `TypeScript`
+Full Stack Software Developer - `React` (`Native`) | `Node.js` | `TypeScript`
 
 ## Experiences
 
@@ -12,4 +12,4 @@ Full Stack Software Developer - `React` (Native) | `Node.js` | `TypeScript`
 
 ## Skills
 
-- `React`, `React Native`, `Next.js`, `Node.js`, `Express.js`, `TypeScript`, `Redux`, `Chakra UI`, `Tailwind CSS`, `Oracle DB`, `MongoDB`, `MySQL`
+`React`, `React Native`, `Next.js`, `Node.js`, `Express.js`, `TypeScript`, `Redux`, `Chakra UI`, `Tailwind CSS`, `Oracle DB`, `MongoDB`, `MySQL`
