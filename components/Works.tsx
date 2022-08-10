@@ -1,17 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
+import H2 from './UI/H2';
+import Section from './UI/Section';
 
 const Works: React.FC = () => (
-  <section className="py-10">
-    <h2 className="text-5xl font-extrabold text-amber-700 py-10">What I do?</h2>
+  <Section>
+    <H2 subTitle="My Works" color="text-amber-800" />
     <p>
-      Working as a Full Stack Developer -{' '}
+      My professional profile on{' '}
       <Link href="https://linkedin.com/in/jaamaalxyz">
         <a
           target="_blank"
-          className="text-blue-600 underline decoration-blue-600"
+          className="text-blue-600 underline decoration-blue-600 font-bold"
         >
-          professional profile on <span className="font-bold">LinkedIn</span>
+          LinkedIn
         </a>
       </Link>
     </p>
@@ -37,28 +39,21 @@ const Works: React.FC = () => (
           The Dev Community
         </a>
       </Link>{' '}
-      and
-    </p>
-    <p>
-      write tech, life and thoughts in my mother tongue{' '}
+      and{' '}
       <Link href="https://jaamaalxyz.medium.com">
         <a
           target="_blank"
-          className="text-green-500 underline decoration-green-500"
+          className="text-green-600 underline decoration-green-500 font-bold"
         >
-          Bengali on <span className="font-bold">Medium</span>
+          Medium
         </a>
       </Link>
     </p>
     <p>
       Conduct <span className="text-blue-400">programming classes</span> for
-      <span className="text-amber-400"> beginners</span> and
+      <span className="text-amber-400"> beginners</span>
     </p>
-    <p>
-      <span className="text-orange-400">Mentoring</span> junior developers
-      <span className="text-purple-600"> in-person</span>
-    </p>
-  </section>
+  </Section>
 );
 
 export default Works;
