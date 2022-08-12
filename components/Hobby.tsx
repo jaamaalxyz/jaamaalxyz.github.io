@@ -5,8 +5,8 @@ const Hobby: React.FC = () => (
   <Section>
     <H2 color="text-teal-700" subTitle="Outside Tech" />
     <p>
-      Reading <span className="text-orange-400">50+ books</span> every years -
-      <span className="text-slate-600"> started from 2018</span>
+      Reading <span className="text-orange-400">50+ books every year</span>
+      <span className="text-slate-600"> since 2018</span>
     </p>
     <p>
       Spend time with <span className="text-fuchsia-500">me and my family</span>
