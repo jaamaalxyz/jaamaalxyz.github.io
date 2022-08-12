@@ -7,13 +7,19 @@ const Works: React.FC = () => (
   <Section>
     <H2 subTitle="My Works" color="text-amber-800" />
     <p>
-      My professional profile on{' '}
+      Visit my professional profile on{' '}
       <Link href="https://linkedin.com/in/jaamaalxyz">
         <a
           target="_blank"
           className="text-blue-600 underline decoration-blue-600 font-bold"
         >
           LinkedIn
+        </a>
+      </Link>{' '}
+      or{' '}
+      <Link href={'/resume.pdf'}>
+        <a className="text-blue-400 underline decoration-slice">
+          download my resume
         </a>
       </Link>
     </p>
