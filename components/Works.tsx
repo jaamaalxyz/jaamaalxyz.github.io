@@ -24,13 +24,13 @@ const Works: React.FC = () => (
       </Link>
     </p>
     <p>
-      Actively contributing{' '}
+      Actively contributing to{' '}
       <Link href="https://github.com/jaamaalxyz">
         <a
           target="_blank"
           className="text-purple-600 underline decoration-purple-600"
         >
-          open-source projects
+          open source projects
         </a>
       </Link>
     </p>
