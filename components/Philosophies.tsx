@@ -4,7 +4,7 @@ import Section from './UI/Section';
 
 const Philosophies: React.FC = () => (
   <Section>
-    <H2 subTitle="Guiding Philoshophies" color="text-green-700" />
+    <H2 subTitle="Guiding Philosophies" color="text-green-700" />
     <div className="pl-1">
       <p>
         There&apos;s always a <span className="text-orange-300">kind</span>{' '}
