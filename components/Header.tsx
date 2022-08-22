@@ -7,7 +7,7 @@ const Header: React.FC = () => (
         Md. Jamal Uddin
       </h1>
       <p className="pt-2 text-sm md:text-lg">
-        Full Stack Software Developer -{' '}
+        Full Stack Developer -{' '}
         <span className="text-blue-400">
           React <span className="text-blue-100">(Native)</span>
         </span>{' '}
