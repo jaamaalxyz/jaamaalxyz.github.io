@@ -11,7 +11,10 @@ const Home: NextPage = () => (
     <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Md. Jamal Uddin - Full Stack JavaScript Developer</title>
+      <title>
+        Md. Jamal Uddin - He is a Full Stack Software Engineer. mainly working
+        with React, Next.js, React Native, Node.js and TypeScript.
+      </title>
     </Head>
     <Layout>
       <Header />

@@ -8,13 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     setShowChild(true);
   }, []);
 
-  if (!showChild) {
-    return null;
-  }
+  if (!showChild) return null;
 
-  if (typeof window === 'undefined') {
-    return <></>;
-  }
+  if (typeof window === 'undefined') return <></>;
+
   return <Component {...pageProps} />;
 }
 
