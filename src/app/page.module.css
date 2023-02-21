@@ -7,6 +7,38 @@
   min-height: 100vh;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-bottom: 2rem;
+}
+
+.navItems {
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background 200ms;
+}
+
+.latestNews {
+}
+
+.news {
+}
+
+.newsItem {
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
