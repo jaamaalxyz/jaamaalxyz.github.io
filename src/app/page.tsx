@@ -13,16 +13,24 @@ export default function Home() {
         </section>
         <section className={styles.navItems}>
           <div className={styles.navItem}>
-            <Link href={'/'}>Home</Link>
+            <Link href={'/'} passHref>
+              Home
+            </Link>
           </div>
           <div className={styles.navItem}>
-            <Link href={'/about'}>About</Link>
+            <Link href={'/about'} passHref>
+              About
+            </Link>
           </div>
           <div className={styles.navItem}>
-            <Link href={'/blog'}>Blog</Link>
+            <Link href={'/blog'} passHref>
+              Blog
+            </Link>
           </div>
           <div className={styles.navItem}>
-            <Link href={'/initiatives'}>Initiatives</Link>
+            <Link href={'/initiatives'} passHref>
+              Initiatives
+            </Link>
           </div>
         </section>
       </nav>
