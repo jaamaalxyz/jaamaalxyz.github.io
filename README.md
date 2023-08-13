@@ -1,38 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+## This is Md. Jamal Uddin
 
-First, run the development server:
+### 👨🏻‍💻 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- 💼 &nbsp; Working as a `Full Stack Software Engineer` @ [ShellBeeHaken Ltd.](https://shellbeehaken.com/)
+- 🏗️ &nbsp; Developing Cross-Platform Mobile apps with `React Native`
+- 📝 &nbsp; Writing articles on [Medium.com](https://medium.com/@jaamaalxyz) and [Dev.to](https://dev.to/jaamaalxyz)
+- 🌱 &nbsp; Reading `Secrets of the JavaScript Ninja` 2nd Edition by `John Resig`, `Bear Bibeault`, and `Josip Maras`
+- 👨‍💻 &nbsp; Connect me on [LinkedIn](https://www.linkedin.com/in/jaamaalxyz/) for professional updates
+- 📫 &nbsp; Shoot me an email: [jaamaalxyz@gmail.com](mailto:jaamaalxyz@gmail.com) for anything
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`React` | `React Native` | `Redux` | `JavaScript` | `Node.js` | `Next.js` | `MongoDB` |`Express.js` | `VS Code` | `TypeScript`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 📊 Stats
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[![](https://komarev.com/ghpvc/?username=jaamaalxyz&color=blue&label=Profile%20Views)](https://github.com/jaamaalxyz/jaamaalxyz)
+[![](https://img.shields.io/github/followers/jaamaalxyz?label=GitHub%20Followers)](https://github.com/jaamaalxyz)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🤝🏻 Social Media Profile
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>
+<a href="https://dev.to/jaamaalxyz"><img alt="Dev.to" src="https://img.shields.io/badge/Dev.to-gray?style=flat-square&logo=dev-to"></a>
+<a href="https://twitter.com/jaamaalxyz" target="blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-gray?style=flat-square&logo=twitter"/></a>  
+<a href="https://stackoverflow.com/users/6542943/md-jamal-uddin"><img alt="Stackoverflow" src="https://img.shields.io/badge/Stackoverflow-gray?style=flat-square&logo=stackoverflow"></a>
+<a href="https://www.linkedin.com/in/jaamaalxyz/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-gray?style=flat-square&logo=linkedin"></a>
+<a href="mailto:jaamaalxyz@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-jaamaalxyz@gmail.com-blue?style=flat-square&logo=gmail"></a>
+</p>
