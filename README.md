@@ -7,7 +7,7 @@
 - 💼 &nbsp; Working as a `Full Stack Software Engineer` @ [ShellBeeHaken Ltd.](https://shellbeehaken.com/)
 - 🏗️ &nbsp; Developing Cross-Platform Mobile apps with `React Native`
 - 📝 &nbsp; Writing articles on [Medium.com](https://medium.com/@jaamaalxyz) and [Dev.to](https://dev.to/jaamaalxyz)
-- 🌱 &nbsp; Reading `Secrets of the JavaScript Ninja` 2nd Edition by `John Resig`, `Bear Bibeault`, and `Josip Maras`
+- 📖 &nbsp; Reading `Secrets of the JavaScript Ninja` 2nd Edition by `John Resig`, `Bear Bibeault`, and `Josip Maras`
 - 👨‍💻 &nbsp; Connect me on [LinkedIn](https://www.linkedin.com/in/jaamaalxyz/) for professional updates
 - 📫 &nbsp; Shoot me an email: [jaamaalxyz@gmail.com](mailto:jaamaalxyz@gmail.com) for anything
 
