@@ -7,7 +7,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://jaamaal.com',
-  siteRepo: 'https://github.com/jaamaalxyz/jaamaal.com',
+  siteRepo: 'https://github.com/jaamaalxyz/jaamaalxyz.github.io',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'jaamaalxyz@gmail.com',
