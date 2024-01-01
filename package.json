@@ -1,7 +1,9 @@
 {
-  "name": "my-portfolio-v2024",
-  "version": "0.1.0",
+  "name": "jaamaalxyz.github.io",
+  "description": "Portfolio + Blog of @jaamaalxyz",
+  "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -23,5 +25,20 @@
     "tailwindcss": "^3.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaamaalxyz/jaamaalxyz.github.io.git"
+  },
+  "author": {
+    "name": "Md Jamal Uddin",
+    "url": "https://github.com/jaamaalxyz"
+  },
+  "bugs": {
+    "url": "https://github.com/jaamaalxyz/jaamaalxyz.github.io/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "homepage": "https://jaamaal.com"
 }
