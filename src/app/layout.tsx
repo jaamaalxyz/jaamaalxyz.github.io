@@ -7,10 +7,9 @@ import Footer from './footer';
 const crimsonPro = Crimson_Pro({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
-  title:
-    'Md. Jamal Uddin - Full Stack Software Engineer - Building Cross-Platform SaaS Products with React Native & Expo',
+  title: 'Md. Jamal Uddin - Full Stack Software Engineer',
   description:
-    'I am a self-taught experienced product engineer who specializes in building cross-platform mobile experiences using React Native and Expo. Leading a highly skilled mobile app development team that adheres to agile methodologies, ensuring the frequent delivery of reliable applications for fast-growing businesses. My proficiency in React Native, React, JavaScript, and relevant domains stems from years of experience, and I take pride in delivering high-quality results.',
+    'Experienced product engineer with a proven track record in developing cross-platform applications using React/React Native. Skilled in leading a dynamic team, implementing agile methodologies to consistently deliver top-notch applications for growing businesses.',
 };
 
 export default function RootLayout({

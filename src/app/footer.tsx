@@ -1,28 +1,21 @@
 import React from 'react';
 import LinkItem from '@/components/LinkItem';
-
-interface LinkInterface {
-  title: string;
-  link: string;
-}
+import Link from 'next/link';
+import { FOOTER_LINKS } from '@/constants';
 
 function FooterLinkGroup({
-  title,
-  links,
+  label,
+  subLinks,
 }: {
-  title: string;
-  links: LinkInterface[];
+  label: string;
+  subLinks: FooterLink[];
 }) {
   return (
     <div>
-      <p className="text-xl 2xl:text-5xl">{title}</p>
-      <ul className="py-3">
-        {links.map((linkItem: LinkInterface, index: number) => (
-          <LinkItem
-            key={`${linkItem.title}-${index.toString()}`}
-            title={linkItem.title}
-            link={linkItem.link}
-          />
+      <p className="text-xl 2xl:text-5xl pb-5">{label}</p>
+      <ul className="flex flex-col gap-2">
+        {subLinks.map((link) => (
+          <LinkItem key={link.label} title={link.label} link={link.link} />
         ))}
       </ul>
     </div>
@@ -30,89 +23,44 @@ function FooterLinkGroup({
 }
 
 export default function Footer() {
-  const getFullYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="max-w-4xl mx-auto px-3 py-5  pt-16 pb-10 bg-slate-900">
       <div className="flex justify-around">
-        <FooterLinkGroup
-          title={'Blog'}
-          links={[
-            {
-              title: 'All Posts',
-              link: '/blog',
-            },
-            {
-              title: 'React',
-              link: '/blog/react',
-            },
-            {
-              title: 'React Native',
-              link: '/blog/react-native',
-            },
-            {
-              title: 'Expo',
-              link: '/blog/expo',
-            },
-          ]}
-        />
-        <FooterLinkGroup
-          title={'Works'}
-          links={[
-            {
-              title: 'Web',
-              link: '/works/web',
-            },
-            {
-              title: 'Mobile',
-              link: '/works/mobile',
-            },
-            {
-              title: 'Other',
-              link: '/works/others',
-            },
-          ]}
-        />
-        <FooterLinkGroup
-          title={'About'}
-          links={[
-            {
-              title: 'About',
-              link: '/about',
-            },
-            {
-              title: 'Uses',
-              link: '/about/uses',
-            },
-            {
-              title: 'Resume',
-              link: '/about/resume',
-            },
-          ]}
-        />
+        {FOOTER_LINKS.map((link: FooterLink) => (
+          <FooterLinkGroup
+            key={link.label}
+            label={link.label}
+            subLinks={link.subLinks || []}
+          />
+        ))}
       </div>
-      <div className="flex justify-between border-t-2 border-slate-700 pt-3">
+      <div className="flex flex-col justify-center items-center border-t-2 border-slate-700 mt-10 px-10 py-5">
         <p className="text-sm md:text-md xl:text-xl 2xl:text-5xl">
-          {'©'} {getFullYear} by{' '}
-          <a
-            href="https://jaamaal.com"
-            className="text-sky-500 hover:text-sky-700"
-          >
+          Copyright {'©'} {currentYear} by{' '}
+          <Link href="/" className="text-sky-500 hover:text-sky-700">
             Md. Jamal Uddin
-          </a>
-          . All rights reserved.
+          </Link>
         </p>
         <p className="text-sm md:text-md xl:text-xl 2xl:text-5xl">
           Inspired by{' '}
-          <a
-            href="https://www.lekoarts.de/"
+          <Link
+            href={'https://www.lekoarts.de/'}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sky-500 hover:text-sky-700"
           >
             Lennart
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
   );
+}
+
+interface FooterLink {
+  label: string;
+  link: string;
+  subLinks?: FooterLink[];
 }
