@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
-import { Crimson_Pro } from 'next/font/google';
+import { Cormorant_Garamond, Crimson_Pro, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from './header';
 import Footer from './footer';
 
 const crimsonPro = Crimson_Pro({ subsets: ['latin'], weight: '400' });
+const garamond = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 export const metadata: Metadata = {
   title: 'Md. Jamal Uddin - Full Stack Software Engineer',
@@ -19,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={crimsonPro.className}>
+      <body className={garamond.className}>
         <Header />
         {children}
         <Footer />

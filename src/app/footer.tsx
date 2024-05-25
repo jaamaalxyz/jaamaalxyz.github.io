@@ -1,6 +1,7 @@
 import React from 'react';
-import LinkItem from '@/components/LinkItem';
 import Link from 'next/link';
+import LinkItem from '@/components/LinkItem';
+
 import { FOOTER_LINKS } from '@/constants';
 
 function FooterLinkGroup({
@@ -37,13 +38,13 @@ export default function Footer() {
         ))}
       </div>
       <div className="flex flex-col justify-center items-center border-t-2 border-slate-700 mt-10 px-10 py-5">
-        <p className="text-sm md:text-md xl:text-xl 2xl:text-5xl">
+        <p className="text-sm md:text-base xl:text-lg 2xl:text-xl">
           Copyright {'©'} {currentYear} by{' '}
           <Link href="/" className="text-sky-500 hover:text-sky-700">
             Md. Jamal Uddin
           </Link>
         </p>
-        <p className="text-sm md:text-md xl:text-xl 2xl:text-5xl">
+        <p className="text-sm md:text-base xl:text-lg 2xl:text-xl">
           Inspired by{' '}
           <Link
             href={'https://www.lekoarts.de/'}

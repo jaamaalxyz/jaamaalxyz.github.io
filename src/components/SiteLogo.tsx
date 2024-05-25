@@ -8,10 +8,10 @@ function SiteLogo() {
       <Link href={'/'}>
         <Image
           src="/assets/images/logo.png"
-          alt="Md. Jamal Uddin - Full Stack Software Engineer - Building Cross-Platform SaaS Products with React Native & Expo"
+          alt="Md. Jamal Uddin - Full Stack Software Engineer"
           className="dark:invert"
-          width={50}
-          height={24}
+          width={40}
+          height={20}
           priority
         />
       </Link>
