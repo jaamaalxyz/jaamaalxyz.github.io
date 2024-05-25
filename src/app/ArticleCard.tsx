@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Spacer from './Spacer';
 
 export default function ArticleCard({
   data,
@@ -9,21 +8,26 @@ export default function ArticleCard({
     date: string;
     readingTime: string;
     summary: string;
-    link: string;
+    url: string;
   };
 }) {
-  const { title, date, readingTime, summary, link } = data;
+  const { title, date, readingTime, summary, url } = data;
+  const dateString = new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
   return (
     <div
       className={
         'border-2 px-3 py-5 border-slate-700 mt-3 shadow-lg shadow-slate-600 rounded-lg hover:shadow-emerald-300 hover:shadow-lg'
       }
     >
-      <Link href={link} target="_blank" rel="noopener noreferrer">
+      <Link href={url} target="_blank" rel="noopener noreferrer">
         <h3 className="text-lg md:text-xl xl:text-2xl">{title}</h3>
         <div className="flex gap-1">
           <p className="text-sm md:text-base xl:text-lg text-emerald-300">
-            Published on {date}
+            Published on {dateString}
           </p>
           <p>
             <span>|</span>
