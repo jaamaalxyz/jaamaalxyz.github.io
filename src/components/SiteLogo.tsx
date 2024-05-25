@@ -10,8 +10,8 @@ function SiteLogo() {
           src="/assets/images/logo.png"
           alt="Md. Jamal Uddin - Full Stack Software Engineer"
           className="dark:invert"
-          width={40}
-          height={20}
+          width={32}
+          height={14}
           priority
         />
       </Link>

@@ -1,6 +1,6 @@
-import HeroSection from './HeroSection';
-import LatestPosts from './LatestPosts';
-import Spacer from './Spacer';
+import HeroSection from '@/components/HeroSection';
+import LatestPosts from '@/components/LatestPosts';
+import Spacer from '@/components/Spacer';
 
 export default function Home() {
   return (
