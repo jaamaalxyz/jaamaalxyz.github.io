@@ -1,5 +1,13 @@
 export const ALL_POSTS = [
   {
+    title: 'Harnessing the Potential of Swift Enums to Build Better iOS Apps',
+    date: '2024-07-01',
+    readingTime: '7',
+    summary:
+      "Enumerations, commonly known as enums, are Swift's powerful and flexible feature. They allow you to define a common type…",
+    url: 'https://medium.com/gitconnected/harnessing-the-potential-of-swift-enums-to-build-better-ios-apps-5b398a840e1f',
+  },
+  {
     title: 'Building a Simple Tap Gesture Element in SwiftUI',
     date: '2024-05-11',
     readingTime: '2',
