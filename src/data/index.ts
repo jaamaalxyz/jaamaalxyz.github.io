@@ -1,5 +1,13 @@
 export const ALL_POSTS = [
   {
+    title: 'Understanding Swift Sets: Tips, Examples, and an iOS App Tutorial',
+    date: '2024-07-05',
+    readingTime: '4',
+    summary:
+      'Sets are a fundamental data structure in Swift, providing a powerful way to store unique elements. They offer fast membership checks...',
+    url: 'https://medium.com/gitconnected/understanding-swift-sets-tips-examples-and-an-ios-app-tutorial-27711d96da92',
+  },
+  {
     title: 'Harnessing the Potential of Swift Enums to Build Better iOS Apps',
     date: '2024-07-01',
     readingTime: '7',
